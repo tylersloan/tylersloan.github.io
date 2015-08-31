@@ -1,18 +1,39 @@
+html,
+body {
+  height: 100%;
+}
+
 html {
   font-size: 100%;
 }
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
   color: $darkGray;
+  font: 18px/1.4 $helvetica;
+  padding: 5px;
+  position: relative;
+
+  &:after {
+    border: 5px solid $lightGray;
+
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    z-index: -1;
+  }
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 2000px;
   padding: 0 10px;
-  width: 100%;
+  width: 95%;
 }
 
 h1, h2, h3, h4, h5, h6 {

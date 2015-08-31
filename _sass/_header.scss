@@ -1,10 +1,14 @@
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 5px solid $lightGray;
+  margin-bottom: 50px;
+  padding: 0 2.5%;
+
+  &:hover,
+  &:focus {
+    .site-name a, nav a {
+      opacity: 1;
+    }
+  }
 
   @include mobile {
     text-align: center;
@@ -39,13 +43,18 @@
 }
 
 .site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue;
+  border-right: 5px solid $lightGray;
   font-weight: 300;
-  font-size: 28px;
   letter-spacing: 1px;
+  padding: 1rem 1rem 1rem 0;
+  margin: 0;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  a {
+    opacity: 0.65;
+  }
 }
 
 .site-description {
@@ -59,10 +68,8 @@
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
 
   @include mobile {
     float: none;
@@ -74,6 +81,7 @@ nav {
   a {
     margin-left: 20px;
     color: $darkGray;
+    opacity: .65;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
