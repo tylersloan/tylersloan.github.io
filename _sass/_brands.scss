@@ -10,7 +10,6 @@
 	}
 
 	&__item {
-		background: #000;
 		height: 100%;
 		list-style: none;
 		margin: auto;
@@ -19,7 +18,7 @@
 		width: 100%;
 
 		&:hover {
-			background: goldenrod;
+			background: $lightGray;
 		}
 
 		&__content {
@@ -30,8 +29,9 @@
 		}
 
 		&__logo {
-			display: inline-block;
-			// margin: 0 auto;
+			display: block;
+			margin: 0 auto;
+			width: 60%;
 		}
 	}
 	
