@@ -4,33 +4,14 @@ layout: default
 
 <section class="content">
 	<nav class="brands">
-		<a href="dennys" class="brands__item">
+		{% for brand in site.data.brands-nav %}
+		  <a href="{{ brand.slug }}" class="brands__item">
 			<div class="brands__item__content">
-				<img class="brands__item__logo" src="http://placehold.it/40x40" alt="">
-				<span class="brand-item__title">Denny's</span>
+				<img class="brands__item__logo" src="{{ site.baseurl }}/images/logos/{{ brand.slug }}.svg" alt="">
+				<span class="brand-item__title">{{ brand.title }}</span>
 			</div>
 		</a>
-
-		<a href="dennys" class="brands__item">
-			<div class="brands__item__content">
-				<img class="brands__item__logo" src="http://placehold.it/40x40" alt="">
-				<span class="brand-item__title">Denny's</span>
-			</div>
-		</a>
-
-		<a href="dennys" class="brands__item">
-			<div class="brands__item__content">
-				<img class="brands__item__logo" src="http://placehold.it/40x40" alt="">
-				<span class="brand-item__title">Denny's</span>
-			</div>
-		</a>
-
-		<a href="dennys" class="brands__item">
-			<div class="brands__item__content">
-				<img class="brands__item__logo" src="http://placehold.it/40x40" alt="">
-				<span class="brand-item__title">Denny's</span>
-			</div>
-		</a>
+		{% endfor %}
 	</nav>
 
 	<article class="showcase">
