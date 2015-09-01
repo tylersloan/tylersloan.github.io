@@ -1,23 +1,29 @@
 .masthead {
-  border-bottom: 5px solid $lightGray;
-  margin-bottom: 50px;
-  padding: 0 2.5%;
+  border-bottom: 6px solid $lightGray;
+  display: table;
+  height: 10%;
+  width: 100%;
+}
+
+.site-name,
+.main-nav {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
 }
 
 .site-name {
-  border-right: 5px solid $lightGray;
+  border-right: 3px solid $lightGray;
   font-weight: 300;
   letter-spacing: 1px;
-  padding: 1rem 2.5% 1rem 0;
   margin: 0;
-
-  display: inline-block;
-  vertical-align: middle;
+  text-align: center;
+  width: 20%;
 }
 
-nav {
-  display: inline-block;
-  vertical-align: middle;
+.main-nav {
+  border-left: 3px solid $lightGray;
+  width: 80%;
 
   a {
     margin-left: 20px;

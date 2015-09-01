@@ -11,11 +11,11 @@ body {
 	background: $white;
   color: $darkGray;
   font: 18px/1.4 $helvetica;
-  padding: 5px;
+  padding: 6px;
   position: relative;
 
   &:after {
-    border: 5px solid $lightGray;
+    border: 6px solid $lightGray;
 
     content: '';
 
@@ -29,11 +29,25 @@ body {
   }
 }
 
+.main {
+  height: 90%;
+}
+
+.content {
+  @extend %clearfix;
+  height: 100%;
+}
+
+.showcase {
+  border-left: 3px solid  $lightGray;
+  float: right;
+  height: 100%;
+  width: 80%; 
+}
+
 .container {
   margin: 0 auto;
   max-width: 2000px;
-  padding: 0 10px;
-  width: 95%;
 }
 
 h1, h2, h3, h4, h5, h6 {
