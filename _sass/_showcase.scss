@@ -1,5 +1,10 @@
 .showcase {
-	padding: 2vh;
+	border-left: 3px solid  $lightGray;
+	float: right;
+	height: 100%;
+	overflow: scroll;
+	padding: 1em 10% 1em 2.5%;
+	width: 80%; 
 
 	&__header {
 

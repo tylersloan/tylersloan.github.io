@@ -9,7 +9,9 @@
 		direction: column;
 	}
 
-	&__item {
+	$item: 'item';
+
+	&__#{$item} {
 		height: 100%;
 		list-style: none;
 		margin: auto;
@@ -17,21 +19,79 @@
 		text-align: center;
 		width: 100%;
 
-		&:hover {
-			background: $lightGray;
-		}
-
 		&__content {
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translateX(-50%) translateY(-50%);
+			width: 100%;
+
+			svg {
+				display: block;
+				margin: 0 auto;
+				max-height: 65px;
+				max-width: percentage(1/2);
+
+				path, rect, polygon {
+					fill: black;
+				}
+			}
 		}
 
-		&__logo {
-			display: block;
-			margin: 0 auto;
-			width: 60%;
+		&.brands__#{$item}--dennys {
+			&:hover,
+			&:focus,
+			&.active {
+				background: $color-dennys;
+			}
+		}
+
+		&.brands__#{$item}--erwin-penland {
+			&:hover,
+			&:focus,
+			&.active {
+				background: $color-erwin-penland;
+			}
+		}
+
+		&.brands__#{$item}--cit-bank {
+			&:hover,
+			&:focus,
+			&.active {
+				background: $color-cit-bank;
+			}
+		}
+
+		&.brands__#{$item}--hunger-crunch {
+			&:hover,
+			&:focus,
+			&.active {
+				background: $color-hunger-crunch;
+			}
+		}
+
+		&.brands__#{$item}--southeastern-mills {
+			&:hover,
+			&:focus,
+			&.active {
+				background: $color-southeastern-mills;
+			}
+		}
+
+		&:hover,
+		&:focus,
+		&.active {
+			background: black;
+			outline: 1px solid white;
+			outline-offset: -6px;
+
+			.brands__#{$item}__content {
+				svg {
+					path, rect, polygon {
+						fill: white;
+					}
+				}
+			}
 		}
 	}
 	

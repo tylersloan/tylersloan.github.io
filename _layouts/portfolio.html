@@ -5,10 +5,9 @@ layout: default
 <section class="content">
 	<nav class="brands">
 		{% for brand in site.data.brands-nav %}
-		  <a href="{{ site.baseurl }}/worked-on/{{ brand.slug }}" class="brands__item js-brand-item">
+		<a href="{{ site.baseurl }}/worked-on/{{ brand.slug }}" class="brands__item brands__item--{{ brand.slug }} {% if brand.title == page.title%}active{% endif %} js-brand-item">
 			<div class="brands__item__content">
-				<img class="brands__item__logo" src="{{ site.baseurl }}/images/logos/{{ brand.slug }}.svg" alt="">
-				<span class="brand-item__title">{{ brand.title }}</span>
+				{% include svg/{{ brand.slug }}.svg %}
 			</div>
 		</a>
 		{% endfor %}
@@ -16,6 +15,7 @@ layout: default
 
 	<article class="showcase">
 		<header class="showcase__header">
+			<img src="{{ site.baseurl }}/images/logos/{{ page.hero }}" alt="" class="showcase__hero">
 			<h1 class="showcase__title">{{ page.title }}</h1>
 		</header>
 
