@@ -8,34 +8,81 @@ html {
 }
 
 body {
-	background: $white;
+	background: $lightGray;
   color: $darkGray;
   font: 18px/1.4 $helvetica;
-  padding: 6px;
   position: relative;
 
   &:after {
-    border: 6px solid $lightGray;
-
     content: '';
-
-    position: absolute;
+    border: {
+      top-width: 1vh;
+      bottom-width: 1vh;
+      color: $lightGray;
+      style: solid;
+    }
+    position: fixed;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-
-    z-index: -1;
   }
+}
+
+svg {
+  text, desc { display: none; }
 }
 
 .main {
   height: 90%;
+  padding: 1vh;
 }
 
 .content {
   @extend %clearfix;
   height: 100%;
+}
+
+.section {
+  background: $lightGray;
+  border-bottom: 1vh solid $lightGray;
+  height: 90%;
+  padding: 5vh;
+  position: relative;
+
+  &.dennys {
+    background: mix($dennys, $darkGray, 65%);
+  }
+
+  &.erwin-penland {
+    background: mix($erwin-penland, $darkGray, 65%);
+  }
+
+  &.cit-bank {
+    background: mix($cit-bank, $darkGray, 65%);
+  }
+
+  &.southeastern-mills {
+    background: mix($southeastern-mills, $darkGray, 65%);
+  }
+
+  &.hunger-crunch {
+    background: mix($hunger-crunch, $darkGray, 65%);
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  svg {
+    height: 10vh;
+    position: relative;
+    top: 40%;
+
+    * {
+      fill: $lightGray;
+    }
+  }
 }
 
 .container {
@@ -45,7 +92,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
   font-weight: bold;
 
   line-height: 1.7;

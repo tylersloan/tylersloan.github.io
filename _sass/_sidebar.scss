@@ -1,4 +1,4 @@
-.brands {
+.sidebar {
 	height: 100%;
 	border-right: 3px solid  $lightGray;
 	float: left;
@@ -38,43 +38,43 @@
 			}
 		}
 
-		&.brands__#{$item}--dennys {
+		&.sidebar__#{$item}--dennys {
 			&:hover,
 			&:focus,
 			&.active {
-				background: $color-dennys;
+				background: $dennys;
 			}
 		}
 
-		&.brands__#{$item}--erwin-penland {
+		&.sidebar__#{$item}--erwin-penland {
 			&:hover,
 			&:focus,
 			&.active {
-				background: $color-erwin-penland;
+				background: $erwin-penland;
 			}
 		}
 
-		&.brands__#{$item}--cit-bank {
+		&.sidebar__#{$item}--cit-bank {
 			&:hover,
 			&:focus,
 			&.active {
-				background: $color-cit-bank;
+				background: $cit-bank;
 			}
 		}
 
-		&.brands__#{$item}--hunger-crunch {
+		&.sidebar__#{$item}--hunger-crunch {
 			&:hover,
 			&:focus,
 			&.active {
-				background: $color-hunger-crunch;
+				background: $hunger-crunch;
 			}
 		}
 
-		&.brands__#{$item}--southeastern-mills {
+		&.sidebar__#{$item}--southeastern-mills {
 			&:hover,
 			&:focus,
 			&.active {
-				background: $color-southeastern-mills;
+				background: $southeastern-mills;
 			}
 		}
 
@@ -85,7 +85,7 @@
 			outline: 1px solid white;
 			outline-offset: -6px;
 
-			.brands__#{$item}__content {
+			.sidebar__#{$item}__content {
 				svg {
 					path, rect, polygon {
 						fill: white;

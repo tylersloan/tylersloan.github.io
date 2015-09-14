@@ -3,10 +3,10 @@ layout: default
 ---
 
 <section class="content">
-	<nav class="brands">
+	<nav class="sidebar">
 		{% for brand in site.data.brands-nav %}
-		<a href="{{ site.baseurl }}/worked-on/{{ brand.slug }}" class="brands__item brands__item--{{ brand.slug }} {% if brand.title == page.title%}active{% endif %} js-brand-item">
-			<div class="brands__item__content">
+		<a href="{{ site.baseurl }}/worked-on/{{ brand.slug }}" class="sidebar__item sidebar__item--{{ brand.slug }} {% if brand.title == page.title%}active{% endif %} js-brand-item">
+			<div class="sidebar__item__content">
 				{% include svg/{{ brand.slug }}.svg %}
 			</div>
 		</a>

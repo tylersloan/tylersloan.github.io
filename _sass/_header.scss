@@ -1,5 +1,12 @@
 .masthead {
-  border-bottom: 6px solid $lightGray;
+  // border: {
+  //   color: $lightGray;
+  //   style: solid;
+  //   width: 1vh;
+  //   bottom-width: 0;
+  // }
+  background: $lightGray;
+  // color: $lightGray;
   display: table;
   height: 10%;
   width: 100%;
