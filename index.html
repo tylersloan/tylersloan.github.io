@@ -1,21 +1,23 @@
 ---
 layout: default
-projects: 
- - 
-   brand: dennys
-   logo_path: /images/logo.png 
-   h1: The Grand Slams
-   project_description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque at quam, natus tempore ipsum nemo placeat. Voluptatem quisquam sit, atque cum quis consequuntur magnam accusantium quibusdam, in laudantium, consectetur odio!
- -
-   brand: 
 ---
 
 {% for brand in site.data.projects %}
-<section class="section {{ brand.slug }}" id="{{ brand.slug }}">
+<section class="portfolio section {{ brand.slug }}" id="{{ brand.slug }}">
 	<header>
 		<h1>
 		{% include svg/{{ brand.slug }}.svg %}
 		</h1>
 	</header>
+
+	<section class="portfolio__piece">
+		<p class="portfolio__piece__date">{{ brand.date }}</p>
+		<div class="portfolio__piece__paragraph">
+			{{ brand.paragraph }}
+		</div>
+		<div class="portfolio__piece__screenshot">
+			<img src="/images/screenshots/{{ brand.slug }}.jpg" alt="Screenshot of {{ brand.title }} website">
+		</div>
+	</section>
 </section>
 {% endfor %}
