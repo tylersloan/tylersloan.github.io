@@ -115,18 +115,9 @@ svg {
       right: 1em;
       width: 55%;
       height: 27em;
-      background: #000;
       overflow: scroll;
-
-      iframe {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
+      box-shadow: 0 3px 13px rgba($darkGray, .5);
+      border: 1em solid rgba($darkGray, .15);
 
       img {
         display: block;
