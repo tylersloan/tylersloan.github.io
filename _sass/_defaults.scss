@@ -14,13 +14,16 @@ body {
   position: relative;
 
   &:after {
+    // background: url(/images/shapes/right-edge.svg) no-repeat calc(100% + 2em) top;
+    // background-size: auto 110%;
     content: '';
     border: {
-      top-width: 1vh;
-      bottom-width: 1vh;
+      top-width: 1em;
+      bottom-width: 1em;
       color: $lightGray;
       style: solid;
     }
+    pointer-events: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -34,8 +37,7 @@ svg {
 }
 
 .main {
-  height: 90%;
-  padding: 1vh;
+  padding: 1em;
 }
 
 .content {
@@ -45,9 +47,9 @@ svg {
 
 .section {
   background: $lightGray;
-  border-bottom: 1vh solid $lightGray;
-  height: 90%;
-  padding: 5vh;
+  border-bottom: 1em solid $lightGray;
+  height: 20em;
+  padding: 2em;
   position: relative;
 
   &.dennys {
@@ -69,7 +71,7 @@ svg {
   &.hunger-crunch {
     background: mix($hunger-crunch, $darkGray, 65%);
   }
-
+  
   h1 {
     margin: 0;
   }

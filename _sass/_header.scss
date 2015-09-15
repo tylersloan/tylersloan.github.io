@@ -1,15 +1,13 @@
 .masthead {
-  // border: {
-  //   color: $lightGray;
-  //   style: solid;
-  //   width: 1vh;
-  //   bottom-width: 0;
-  // }
   background: $lightGray;
-  // color: $lightGray;
   display: table;
-  height: 10%;
+  padding: 3em 1em 0.2em 1em;
+  position: relative;
   width: 100%;
+
+  a {
+    letter-spacing: 1px;
+  }
 }
 
 .site-name,
@@ -20,26 +18,33 @@
 }
 
 .site-name {
-  border-right: 3px solid $lightGray;
   font: {
     size: 100%;
     weight: 300;
   }
-  letter-spacing: 1px;
   margin: 0;
-  text-align: center;
-  width: 20%;
 }
 
 .main-nav {
-  border-left: 3px solid $lightGray;
-  width: 80%;
+  border-left: 0.25em solid darken($lightGray, 10%);
+  padding-left: 1em;
 
   a {
-    margin-left: 20px;
     color: $darkGray;
     text-align: right;
     font-weight: 300;
-    letter-spacing: 1px;
+
+    ~ a {
+      margin-left: 1em;
+    }
   }
+}
+
+.label {
+  display: block;
+  font-size: 40%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: .5;
+  text-transform: uppercase;
 }
