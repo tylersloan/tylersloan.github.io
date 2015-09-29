@@ -584,17 +584,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/images\/screenshots\/southeastern-mills.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 273590,
-		"inputAbbreviatedPath": "\/_site\/images\/screenshots\/southeastern-mills.jpg",
-		"outputAbbreviatedPath": "\/_site\/images\/screenshots\/southeastern-mills.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/_site\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
