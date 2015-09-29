@@ -2,36 +2,25 @@
 layout: default
 ---
 
-<section class="content">
-	<nav class="sidebar">
-		{% for brand in site.data.brands-nav %}
-		<a href="{{ site.baseurl }}/worked-on/{{ brand.slug }}" class="sidebar__item sidebar__item--{{ brand.slug }} {% if brand.title == page.title%}active{% endif %} js-brand-item">
-			<div class="sidebar__item__content">
-				{% include svg/{{ brand.slug }}.svg %}
-			</div>
-		</a>
-		{% endfor %}
-	</nav>
-
-	<article class="showcase">
+<main role="main" class="main">
+	<article class="container showcase">
 		<header class="showcase__header">
-			<img src="{{ site.baseurl }}/images/logos/{{ page.hero }}" alt="" class="showcase__hero">
+			<img src="{{ site.baseurl }}/images/{{ page.hero }}" alt="" class="showcase__hero">
 			<h1 class="showcase__title">{{ page.title }}</h1>
 		</header>
 
-		<main class="showcase__content">
+		<section class="showcase__content">
 			<p>{{ page.opener }}</p>
-
+			<a href="{{ page.url }}" class="link--external">Go to {{ page.title }} live site.</a>
 			<section class="showcase__screenshots">
 				{% for screeny in page.screenshots %}
 				<figure class="showcase__figure">
-					<img src="{{ site.baseurl }}/images/screenshots/{{ page.slug }}/{{ screeny.image }}" alt="{{ screeny.caption }}">
+					<img src="{{ site.baseurl }}/images/screenshots/{{ screeny.image }}" alt="{{ screeny.caption }}">
 					<figcaption>{{ screeny.caption }}</figcaption>
 				</figure>
 				{% endfor %}
 			</section>
-			
-		</main>
+		</section>
 
 		{% if page.footer %}
 		<footer class="showcase__footer">
@@ -39,4 +28,4 @@ layout: default
 		</footer>
 		{% endif %}
 	</article>
-</section>
+</main>

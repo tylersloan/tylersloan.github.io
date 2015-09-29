@@ -6,11 +6,12 @@
 // Colors
 $blue: #4183C4;
 
+// $dennys: #EC1C24;
 $dennys: #EC1C24;
 $erwin-penland: #961613;
 $cit-bank: #076BAC;
-$southeastern-mills: #605851;
-// $southeastern-mills: #F6EACC;
+// $southeastern-mills: #605851;
+$southeastern-mills: #F6EACC;
 $hunger-crunch: #57C3CB;
 
 // Grays
@@ -22,13 +23,13 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$cabin: 'Cabin', 'Helvetica Neue', sans-serif;
+$weight-normal: 400;
+$weight-bold: 700;
 
 // Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
+@mixin medium-screen {
+  @media screen and (min-width: 768px) {
     @content;
   }
 }

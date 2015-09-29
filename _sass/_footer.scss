@@ -1,0 +1,12 @@
+footer {
+	.home & {
+		position: absolute;
+		left: 2.5em;
+		bottom: 2.5em;
+		width: calc(100% - 5em);
+	}
+
+	p {
+		line-height: 1;
+	}
+}

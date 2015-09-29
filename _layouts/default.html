@@ -9,32 +9,23 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
   </head>
 
-  <body>
+  <body class="{{ page.class }}">
     <header class="masthead clearfix">
       <h1 class="site-name">
-        <small class="label">Engineer</small>
-        <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+        <a href="{{ site.baseurl }}/">{{ site.name }}</a>,
+        <small>Front-end Engineer</small>
       </h1>
-      <nav class="main-nav">
-        <small class="label">Projects</small>
-        {% for brand in site.data.brands-nav %}
-        <a href="{{ site.baseurl }}/{{ brand.slug }}">{{ brand.title }}</a>
-        {% endfor %}
-      </nav>
-      <nav class="secondary-nav">
-        <small class="label">Other Pages</small>
-        <a href="{{ site.baseurl }}/blog">Blog</a>
-        <a href="{{ site.baseurl }}/about">About</a>
-      </nav>
+
+      {% if page.class == "case-study" %}
+        <!-- nav. -->
+      {% endif %}
     </header>
 
-    <main id="main" role="main" class="main container">
-      {{ content }}
-    </main>
+    {{ content }}
 
     {% include analytics.html %}
   </body>

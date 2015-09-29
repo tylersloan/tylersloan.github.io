@@ -1,42 +1,32 @@
 .masthead {
-  background: $lightGray;
   display: table;
-  padding: 3em 1em 0.2em 1em;
   position: relative;
   width: 100%;
+  z-index: 1;
+  
+  @include medium-screen {
+    border-bottom: 1px solid black;
+    height: 10%;
+    padding: 0 2.5em;
+  }
 
   a {
     letter-spacing: 1px;
   }
 }
 
-.site-name,
-.main-nav {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-}
-
 .site-name {
+  display: table-cell;
   font: {
     size: 100%;
     weight: 300;
   }
   margin: 0;
-}
+  vertical-align: middle;
 
-.main-nav {
-  border-left: 0.25em solid darken($lightGray, 10%);
-  padding-left: 1em;
-
-  a {
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-
-    ~ a {
-      margin-left: 1em;
-    }
+  small {
+    display: block;
+    font-size: 90%;
   }
 }
 

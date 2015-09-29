@@ -1,23 +1,46 @@
 ---
 layout: default
+slug: home
 ---
 
-{% for brand in site.data.projects %}
-<section class="portfolio section {{ brand.slug }}" id="{{ brand.slug }}">
-	<header>
-		<h1>
-		{% include svg/{{ brand.slug }}.svg %}
-		</h1>
-	</header>
+<main id="main" role="main" class="main">
+	<article class="container">
+		
+		<header class="main__header">
+			<p>I bring designs to life on the web. The fun part is making the experience a pleasant one on _your_ browser, device and connection. I also like writing Javascript. <a href=" }}/about">Read More</a></p>
+		</header>
+		
+		<section>
+			<p>The following list is one of projects I've done in the last year, or so.</p>
+			<ul class="list--flex">
+				
+				{% for brand in site.data.brands-nav %}
+				<li class="list--flex__item">
+					<a href="{{ site.baseurl }}/{{ brand.slug }}">
+						<span>{{ brand.title }}</span>
+						{% include svg/{{ brand.slug }}.svg %}
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</section>
 
-	<section class="portfolio__piece">
-		<p class="portfolio__piece__date">{{ brand.date }}</p>
-		<div class="portfolio__piece__paragraph">
-			{{ brand.paragraph }}
-		</div>
-		<div class="portfolio__piece__screenshot">
-			<img src="/images/screenshots/{{ brand.slug }}.jpg" alt="Screenshot of {{ brand.title }} website">
-		</div>
-	</section>
-</section>
-{% endfor %}
+		<section>
+			<p>Here are a couple projects I work on in my free time<sup>*</sup>.</p>
+			<ul class="list--flex">
+				{% for project in site.data.open-source-projects %}
+				<li class="list--flex__item">
+					<a href="{{ project.url }}" class="link--external">
+						<span>{{ project.title }}</span>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</section>
+		
+		<footer>
+			<p><small><sup>* </sup>Just kidding, I don't have free time. I have a 2yo, a wife I can't spend enough time with and 1 or 2 more kiddos on the way. I don't have work-life balance but I do have my priorities in order.</small></p>
+		</footer>
+
+	</article>
+</main>
