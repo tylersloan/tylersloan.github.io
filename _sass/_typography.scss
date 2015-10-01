@@ -1,6 +1,5 @@
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-
+  font-weight: 700;
   line-height: 1.2;
   margin: 1em 0 15px;
   padding: 0;
@@ -10,7 +9,7 @@ h1 {
   font-size: 125%;
 
   a {
-    color: inherit;
+     border: none;
   }
 }
 
@@ -28,15 +27,36 @@ h4 {
 }
 
 p {
+  font-size: .9em;
   margin: 15px 0;
 }
 
 a {
-  color: $blue;
+  color: #464a78;
+  border-bottom: 2px solid rgba(#464a78, .25);
   text-decoration: none;
   cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
+  
+  &:hover,
+  &:focus {
+    border-bottom: 3px solid rgba(#464a78, 1);
+  }
+}
+
+.link {
+  &--external {
+    &:after {
+      background: url(/images/icons/browser-windows.svg) no-repeat;
+      background-size: 100% auto;
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 1em;
+      opacity: .3;
+      vertical-align: middle;
+      margin-left: 2px;
+      margin-top: -2px;
+    }
   }
 }
 

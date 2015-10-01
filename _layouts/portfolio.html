@@ -2,21 +2,24 @@
 layout: default
 ---
 
-<main role="main" class="main">
+<main role="main" class="main" id="{{ page.slug }}">
 	<article class="container showcase">
 		<header class="showcase__header">
-			<img src="{{ site.baseurl }}/images/{{ page.hero }}" alt="" class="showcase__hero">
-			<h1 class="showcase__title">{{ page.title }}</h1>
+			<h1 class="showcase__title">
+				<img src="{{ site.baseurl }}/images/{{ page.hero }}" alt="" class="showcase__hero">
+			</h1>
 		</header>
 
 		<section class="showcase__content">
 			<p>{{ page.opener }}</p>
-			<a href="{{ page.url }}" class="link--external">Go to {{ page.title }} live site.</a>
+			<p><a href="{{ page.url }}" class="link--external">Go to {{ page.title }} live site.</a></p>
 			<section class="showcase__screenshots">
 				{% for screeny in page.screenshots %}
 				<figure class="showcase__figure">
 					<img src="{{ site.baseurl }}/images/screenshots/{{ screeny.image }}" alt="{{ screeny.caption }}">
+					{% if screeny.caption %}
 					<figcaption>{{ screeny.caption }}</figcaption>
+					{% endif %}
 				</figure>
 				{% endfor %}
 			</section>

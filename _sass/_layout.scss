@@ -10,6 +10,9 @@
 }
 
 .container {
+  max-width: 1000px;
+  margin: 0 auto;
+
   @include medium-screen {
     padding: 2.5em;
 
@@ -17,4 +20,6 @@
       height: 100%;
     }
   }
+
+
 }

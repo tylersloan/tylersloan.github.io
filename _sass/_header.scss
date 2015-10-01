@@ -1,18 +1,30 @@
-.masthead {
+.masthead,
+.mastfoot {
   display: table;
   position: relative;
   width: 100%;
   z-index: 1;
+  height: 10%;
   
   @include medium-screen {
-    border-bottom: 1px solid black;
-    height: 10%;
     padding: 0 2.5em;
   }
 
   a {
     letter-spacing: 1px;
   }
+}
+
+.masthead {
+  border-bottom: 1px solid black;
+  padding: 1em;
+}
+
+.mastfoot {
+  border-top: 1px solid black;
+  margin-top: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .site-name {

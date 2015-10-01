@@ -5,13 +5,19 @@ body {
 
 body {
   background: #eef2f3;        
+  background: -webkit-linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
+  background:    -moz-linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
+  background:     -ms-linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
+  background:      -o-linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
+  background:         linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
+  background-attachment: fixed;
   color: $darkGray;
   font: {
     family: $cabin;
     size: 16px;
     weight: $weight-normal;
   }
-  line-height: 1.5;
+  line-height: 1.75;
   padding: 15%;
   position: relative;
   transition: 3s background ease;
@@ -21,33 +27,27 @@ body {
   }
 
   &:after {
-    content: '';
+    // content: '';
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(35deg, rgba(whitesmoke, .1) 12%, rgba(white,.85) 88%);
-    background:    -moz-linear-gradient(35deg, rgba(whitesmoke, .1) 12%, rgba(white,.85) 88%);
-    background:     -ms-linear-gradient(35deg, rgba(whitesmoke, .1) 12%, rgba(white,.85) 88%);
-    background:      -o-linear-gradient(35deg, rgba(whitesmoke, .1) 12%, rgba(white,.85) 88%);
-    background:         linear-gradient(35deg, rgba(whitesmoke, .1) 12%, rgba(white,.85) 88%);
+    background: -webkit-linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
+    background:    -moz-linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
+    background:     -ms-linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
+    background:      -o-linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
+    background:         linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
     z-index: 0;
   }
+}
 
-  &.dennys {
-    background: rgba($dennys, .2);
-  }
+nav {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
 
-  &.cit-bank {
-    background: rgba($cit-bank, .2);
-  }
-
-  &.southeastern-mills {
-    background: rgba($southeastern-mills, .2);
-  }
-
-  &.hunger-crunch {
-    background: rgba($hunger-crunch, .2);
+  a {
+    margin-left: 1em;
   }
 }
