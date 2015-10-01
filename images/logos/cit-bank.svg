@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 34.6 500 237.2" enable-background="new 0 34.6 500 237.2" xml:space="preserve">
-<title>CIT Bank Logo</title>
-<desc>Two-color, staked wordmark for CIT Bank</desc>
-<polygon fill="#076BAC" points="447.4,267.4 447.4,129.2 500,129.2 500,51.9 310.1,51.9 310.1,129.2 362.3,129.2 362.3,267.4 "/>
-<rect x="225.4" y="129.2" fill="#076BAC" width="84.9" height="138.3"/>
-<polygon fill="#969799" points="225.4,129.4 225.4,34.6 329.1,34.6 "/>
-<path fill="#076BAC" d="M114.5,271.8c53.4,0,98.2-36.5,110.7-86h-79.8c-7.8,8.5-18.8,13.7-30.9,13.7c-23.4,0-42.1-18.8-42.1-42
-	c0-23,18.8-41.8,42.1-41.8c12.2,0,23.2,5.3,30.9,13.7h79.8c-12.5-49.6-57.3-86-110.7-86C51.3,43.4,0,94.6,0,157.5
-	C0,220.7,51.3,271.8,114.5,271.8"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 34.6 500 237.2"><title>CIT Bank Logo</title><desc>Two-color, staked wordmark for CIT Bank</desc><path fill="#076BAC" d="M447.4 267.4V129.2H500V51.9H310.1v77.3h52.2v138.2"/><path fill="#076BAC" d="M225.4 129.2h84.9v138.3h-84.9z"/><path fill="#969799" d="M225.4 129.4V34.6h103.7"/><path fill="#076BAC" d="M114.5 271.8c53.4 0 98.2-36.5 110.7-86h-79.8c-7.8 8.5-18.8 13.7-30.9 13.7-23.4 0-42.1-18.8-42.1-42 0-23 18.8-41.8 42.1-41.8 12.2 0 23.2 5.3 30.9 13.7h79.8c-12.5-49.6-57.3-86-110.7-86C51.3 43.4 0 94.6 0 157.5c0 63.2 51.3 114.3 114.5 114.3"/></svg>
