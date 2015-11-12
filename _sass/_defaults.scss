@@ -6,9 +6,6 @@ body {
 body {
   background: #eef2f3;        
   background: -webkit-linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
-  background:    -moz-linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
-  background:     -ms-linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
-  background:      -o-linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
   background:         linear-gradient(35deg, rgba(black, .1) 12%, rgba(white,.85) 88%);
   background-attachment: fixed;
   color: $darkGray;

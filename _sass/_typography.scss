@@ -28,7 +28,29 @@ h4 {
 
 p {
   font-size: .9em;
-  margin: 15px 0;
+  margin: 0 0 15px;
+}
+
+.strikethrough {
+  color: rgba($darkGray, .6);
+  display: inline-block;
+  margin: 0 3px;
+  position: relative;
+
+  &:after {
+    $width: 103;
+    content: '';
+
+    background: black;
+    display: block;
+
+    position: absolute;
+    left: -1.5%;
+    top: 50%;
+
+    height: 1px;
+    width: ($width * 1%);
+  }
 }
 
 a {
