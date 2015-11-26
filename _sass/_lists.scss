@@ -1,33 +1,83 @@
 .list {
-  &--flex {
-    // display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	&--social {
+		text-align: center;
 
-    &__item {
-      // width: 20%;
-      padding-left: 14px;
-      position: relative;
+		.header & {
+			bottom: 1em;
+			left: 10%;
+			position: absolute;
+			width: 80%;
+		}
 
-      &:before {
-        content: '';
-        display: block;
-        width: 10px;
-        height: 1px;
-        background: #000;
-        position: absolute;
-        left: 0;
-        top: calc(50% - 1px);
-      }
+		&__item {
+			display: inline-block;
+			padding: 0 35%;
+			width: 100%;
 
-      span {
+			transition: .2s all ease;
+			
+			@media screen and (max-width: 499px) {
+				margin-bottom: 1.5em;
+			}
 
-      }
+			@media screen and (min-width: 500px) {
+				padding: calc(1em/2) calc(1em/3);
+				width: 45%;
+			}
 
-      svg {
-        display: none;
-      }
-    }
-  }
+			&__link {
+				display: block;
+				line-height: 0;
+				margin: 0 auto;
+
+				&__icon {
+					display: block;
+
+					* { fill: $black; }
+				}
+
+				&:hover,
+				&:focus {
+					* {
+						fill: $color;
+					}
+					// &.dribbble {
+					// 	* {
+					// 		fill: $dribbble;
+					// 	}
+					// }
+					// &.email {
+					// 	* {
+					// 		fill: $email;
+					// 	}
+					// }
+					// &.facebook {
+					// 	* {
+					// 		fill: $facebook;
+					// 	}
+					// }
+					// &.github {
+					// 	* {
+					// 		fill: $github;
+					// 	}
+					// }
+					// &.instagram {
+					// 	* {
+					// 		fill: $instagram;
+					// 	}
+					// }
+					// &.twitter {
+					// 	* {
+					// 		fill: $twitter;
+					// 	}
+					// }
+					// &.stack-overflow {
+					// 	* {
+					// 		fill: $stack-overflow;
+					// 	}
+					// }
+				}
+			}
+		}
+	}
 }

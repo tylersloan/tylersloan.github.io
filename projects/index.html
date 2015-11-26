@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="projects">
+  {% for project in site.projects %}
+    <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+    <p>Performed by {{ project.artist }}{% if project.director %}, directed by {{ project.director }}{% endif %}</p>
+    {% for work in project.works %}
+      <h3>{{ work.title }}</h3>
+      <p>Composed by {{ work.composer }}</p>
+      <ul>
+      {% for track in work.tracks %}
+        <li>{{ track.title }} ({{ track.duration }})</li>
+      {% endfor %}
+      </ul>
+    {% endfor %}
+  {% endfor %}
+</div>

@@ -1,52 +1,34 @@
-.masthead,
-.mastfoot {
-  display: table;
-  position: relative;
-  width: 100%;
-  z-index: 1;
-  height: 10%;
-  
-  @include medium-screen {
-    padding: 0 2.5em;
-  }
+.header {
+	border-right: 1px solid $black;
+	height: 100%;
 
-  a {
-    letter-spacing: 1px;
-  }
-}
+	max-width: calc((55em/16) + 2em);
+	padding: 1em;
+	text-align: center;
+	width: 20%;
+	
 
-.masthead {
-  border-bottom: 1px solid black;
-  padding: 1em;
-}
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
 
-.mastfoot {
-  border-top: 1px solid black;
-  margin-top: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
+	&__section {
+		display: inline-block;
+		padding: 1.5em 0;
+		text-align: left;
+		transform: rotate(180deg);
+		-webkit-writing-mode: vertical-rl;
 
-.site-name {
-  display: table-cell;
-  font: {
-    size: 100%;
-    weight: 300;
-  }
-  margin: 0;
-  vertical-align: middle;
-
-  small {
-    display: block;
-    font-size: 90%;
-  }
-}
-
-.label {
-  display: block;
-  font-size: 40%;
-  font-weight: bold;
-  letter-spacing: 1px;
-  line-height: .5;
-  text-transform: uppercase;
+		span {
+			&:first-of-type {
+				display: block;
+				font: {
+					size: 70%;
+					weight: 300;
+				}
+				text-transform: uppercase;
+			}
+		}
+	}
 }

@@ -4,38 +4,28 @@
 //
 
 // Colors
-$blue: #4183C4;
+$black: #111111;
+$white: #ffffff;
+$color: #0BBD88;
 
-// $dennys: #EC1C24;
-$dennys: #EC1C24;
-$erwin-penland: #961613;
-$cit-bank: #076BAC;
-// $southeastern-mills: #605851;
-$southeastern-mills: #F6EACC;
-$hunger-crunch: #57C3CB;
-
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+$twitter: #00aced;
+$facebook: #3b5998;
+$instagram: #517fa4;
+$dribbble: #ea4c89;
+$email: $color;
+$github: #000;
+$stack-overflow: #f69c55;
 
 // Font stacks
-$cabin: 'Cabin', 'Helvetica Neue', sans-serif;
-$weight-normal: 400;
-$weight-bold: 700;
+$fallbacks: "Arial Narrow", "Helvetica Neue", Helvetica;
+$adelle: "adelle-sans", $fallbacks;
+
+$fw-normal: 300;
+$fw-heavy: 900;
 
 // Mobile breakpoints
-@mixin medium-screen {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin large-screen {
-  @media screen and (min-width: 1200px) {
+@mixin mobile {
+  @media screen and (max-width: 640px) {
     @content;
   }
 }

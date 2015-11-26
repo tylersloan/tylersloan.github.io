@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body, .header { height: 100%; }
+
+body {
+	// color: rgba($black, 0);
+	color: $black;
+	font: {
+		family: $adelle;
+		size: 16px;
+		weight: $fw-normal;
+	}
+	padding-left: calc((55em/16) + 2em + 1.5em);
+  	padding-right: calc((55em/16) - 2em);
+  	position: relative;
+
+  	// transition: .25s color ease;
+
+  	// .wf-loading & { color: rgba($black, 0); }
+  	// .wf-active & { color: $black; }
+}
+
+main {
+	padding: 2.5em 0;
+
+	section ~ section {
+		margin-top: 2.5em;
+	}
+}

@@ -1,46 +1,40 @@
 ---
 layout: default
-slug: home
 ---
 
-<main id="main" role="main" class="main">
-	<article class="container">
-		
-		<header class="main__header">
-			<p>I bring designs to life on the web. The fun part is making the experience a pleasant one on _your_ browser, device and connection. I also like writing Javascript. <a href="{{site.baseurl }}/about">Read More</a></p>
-		</header>
-		
-		<section>
-			<p>The following list is one of projects I've worked on over the last year, or so.</p>
-			<ul class="list--flex">
-				
-				{% for brand in site.data.brands-nav %}
-				<li class="list--flex__item">
-					<a href="{{ site.baseurl }}/{{ brand.slug }}">
-						<span>{{ brand.title }}</span>
-						{% include svg/{{ brand.slug }}.svg %}
-					</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</section>
+<section>
+	<h2>About Me</h2>
+	<p>Some information about you!</p>
+	<p>A place to include any other types of information that you'd like to include about yourself.</p>
 
-		<section>
-			<p>Here are a couple projects I work on when I make time to.</p>
-			<ul class="list--flex">
-				{% for project in site.data.open-source-projects %}
-				<li class="list--flex__item">
-					<a href="{{ project.url }}" class="link--external" target="_blank">
-						<span>{{ project.title }}</span>
-					</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</section>
-		
-		<footer>
-			
-		</footer>
+	<p>
+		<a href="{{ site.baseurl }}about">Read more</a>
+	</p>
+</section>
 
-	</article>
-</main>
+<section>
+	<h2>Projects</h2>
+	<ul>
+		{% for project in site.projects %}
+			<li>
+				<a href="{{ project.url }}">{{ project.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	<p>
+		<a href="{{ site.baseurl }}projects">See all projects</a>
+	</p>
+</section>
+
+<section>
+	<h2>Latest blog</h2>
+	
+	{% for post in site.posts %}
+	  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+	{% endfor %}
+
+	<p>
+		<a href="{{ site.baseurl }}blog">/blog</a>
+	</p>
+</section>
+

@@ -1,88 +1,14 @@
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 1em 0 15px;
-  padding: 0;
-}
-
-h1 {
-  font-size: 125%;
-
-  a {
-     border: none;
-  }
-}
-
-h2 {
-  font-size: 115%;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-  font-size: .9em;
-  margin: 15px 0;
-}
-
-.strikethrough {
-  color: rgba($darkGray, .6);
-  display: inline-block;
-  margin: 0 3px;
-  position: relative;
-
-  &:after {
-    $width: 103;
-    content: '';
-
-    background: black;
-    display: block;
-
-    position: absolute;
-    left: -1.5%;
-    top: 50%;
-
-    height: 1px;
-    width: ($width * 1%);
-  }
+	font-weight: $fw-heavy;
 }
 
 a {
-  color: #464a78;
-  border-bottom: 2px solid rgba(#464a78, .25);
-  text-decoration: none;
-  cursor: pointer;
-  
-  &:hover,
-  &:focus {
-    border-bottom: 3px solid rgba(#464a78, 1);
-  }
-}
+	text-decoration: none;
+	color: $color;
+	// color: rgba($color, 0);
 
-.link {
-  &--external {
-    &:after {
-      background: url(/images/icons/browser-windows.svg) no-repeat;
-      background-size: 100% auto;
-      content: '';
-      display: inline-block;
-      width: 8px;
-      height: 1em;
-      opacity: .3;
-      vertical-align: middle;
-      margin-left: 2px;
-      margin-top: -2px;
-    }
-  }
-}
+	// transition: .25s color ease;
 
-small {
-  color: $gray;
-  font-size: 80%;
+	// .wf-loading & { color: rgba($color, 0); }
+	// .wf-active & { color: $color; }
 }
