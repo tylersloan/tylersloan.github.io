@@ -2,28 +2,22 @@
 layout: default
 ---
 
-<article class="project">
-  {% for project in site.projects %}
-    <header>
-      <h2>
-        <a href="{{ project.url }}">{{ project.title }}</a>
-      </h2>
-    </header>
-    <main>
-      <p>Performed by {{ project.artist }}{% if project.director %}, directed by {{ project.director }}{% endif %}</p>
-      {% for work in project.works %}
-        <h3>{{ work.title }}</h3>
-        <p>Composed by {{ work.composer }}</p>
-        <ul>
-        {% for track in work.tracks %}
-          <li>{{ track.title }} ({{ track.duration }})</li>
-        {% endfor %}
-        </ul>
+<article class="project section">
+  <header>
+    <h2 class="section__title">
+      {{ page.title }}
+    </h2>
+  </header>
+  
+  <main>
+    <ul class="list--inline">
+      {% for tech in page.technologies %}
+      <li class="list--inline__item">{{ tech }}</li>
       {% endfor %}
+    </ul>
 
-      {{ content }}
-    </main>
+    {{ content }}
+  </main>
 
-    <footer></footer>
-  {% endfor %}
+  <footer></footer>
 </article>

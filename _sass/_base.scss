@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 
-html, body, .header { height: 100%; }
+html, body, .header { min-height: 100vh; }
 
 body {
 	// color: rgba($black, 0);
@@ -23,9 +23,9 @@ body {
 }
 
 main {
-	padding: 2.5em 0;
+	// padding-bottom: 2.5em;
 
 	section ~ section {
-		margin-top: 2.5em;
+		// margin-top: 2.5em;
 	}
 }

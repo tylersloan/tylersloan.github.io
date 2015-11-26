@@ -1,4 +1,14 @@
 .list {
+	&--inline {
+		&__item {
+			display: inline-block;
+
+			~ &__item {
+				margin-left: 1em;
+			}
+		}
+	}
+	
 	&--social {
 		text-align: center;
 
