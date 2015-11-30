@@ -1,9 +1,11 @@
 ---
 layout: project
-title: Denny's
-builtIn: "Winter 2014"
+title: "CIT Bank"
+orderId: 004
+builtIn: "Summer 2014"
 technologies:
   - HTML
   - SCSS
   - Javascript / jQuery
+  - Middleman
 ---
