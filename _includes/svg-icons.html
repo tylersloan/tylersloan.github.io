@@ -19,6 +19,13 @@
 		</a>
 	</li>
 {% endif %}
+{% if site.footer-links.stackoverflow %}
+	<li class="list--social__item">
+		<a href="http://stackoverflow.com/{{ site.footer-links.stackoverflow }}" class="list--social__item__link stack-overflow">
+			<svg class="list--social__item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.6 117.9"><text class="hidden-text">StackOverflow</text><path d="M84.1 107.4V75.8h10.5v42.1H0V75.8h10.5v31.6"/><path d="M22.1 72.9l51.5 10.8 2.2-10.3-51.5-10.8-2.2 10.3zm6.8-24.6l47.7 22.2L81 61 33.3 38.7l-4.4 9.6zm13.2-23.4l40.4 33.7 6.7-8.1-40.4-33.7-6.7 8.1zM68.2 0l-8.4 6.3 31.4 42.2 8.4-6.3L68.2 0zM21 96.8h52.6V86.3H21v10.5z"/></svg>
+		</a>
+	</li>
+{% endif %}
 {% if site.footer-links.dribbble %}
 	<li class="list--social__item">
 		<a href="https://dribbble.com/{{ site.footer-links.dribbble }}" class="list--social__item__link dribbble">
@@ -37,13 +44,6 @@
 	<li class="list--social__item">
 		<a href="https://www.facebook.com/{{ site.footer-links.facebook }}" class="list--social__item__link facebook">
 			<svg class="list--social__item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29"><text class="hidden-text">Facebook</text><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"/></svg>
-		</a>
-	</li>
-{% endif %}
-{% if site.footer-links.stackoverflow %}
-	<li class="list--social__item">
-		<a href="http://stackoverflow.com/{{ site.footer-links.stackoverflow }}" class="list--social__item__link stack-overflow">
-			<svg class="list--social__item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.6 117.9"><text class="hidden-text">StackOverflow</text><path d="M84.1 107.4V75.8h10.5v42.1H0V75.8h10.5v31.6"/><path d="M22.1 72.9l51.5 10.8 2.2-10.3-51.5-10.8-2.2 10.3zm6.8-24.6l47.7 22.2L81 61 33.3 38.7l-4.4 9.6zm13.2-23.4l40.4 33.7 6.7-8.1-40.4-33.7-6.7 8.1zM68.2 0l-8.4 6.3 31.4 42.2 8.4-6.3L68.2 0zM21 96.8h52.6V86.3H21v10.5z"/></svg>
 		</a>
 	</li>
 {% endif %}
