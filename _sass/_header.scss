@@ -22,8 +22,11 @@
 		display: inline-block;
 		padding: 1.5em 0;
 		text-align: left;
-		transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		    -ms-transform: rotate(180deg);
+		        transform: rotate(180deg);
 		-webkit-writing-mode: vertical-rl;
+				writing-mode: vertical-rl;
 
 		span {
 			&:first-of-type {
