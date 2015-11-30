@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header style="border-top: 0.5em solid black;" class="header">
       <span class="header__section">
         <h1 class="site-name">
           <span>Focus:</span>
@@ -36,7 +36,8 @@
     </header>
 
     <main id="main" role="main" class="main template--{{ page.bodyClass }}">
-      <article class="" style="width: 40%; display: inline-block; vertical-align: top;">
+      
+      <article class="article--home">
         <section class="section">
           <h2 class="section__title">About Me</h2>
           <p>Some information about you!</p>
@@ -84,7 +85,7 @@
           
           {% for post in site.posts limit:1 %}
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            <div class="post-excerpt" style="width: 50%;">
+            <div class="post-excerpt">
               {{ post.excerpt | remove: '<p>' | remove: '</p>' }} ///
               <a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
             </div>
@@ -97,7 +98,7 @@
         </section>
       </article>
 
-      <article style="width: 55%; display: inline-block; vertical-align: top;">
+      <article class="article--home">
         {{ content }}
       </article>
     </main>

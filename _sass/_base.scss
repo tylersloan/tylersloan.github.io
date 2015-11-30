@@ -22,8 +22,25 @@ body {
   	// .wf-active & { color: $black; }
 }
 
+.article {
+	&--home {
+		border-top: .5em solid $black;
+		display: inline-block;
+		padding-top: 2.5em;
+		vertical-align: top;
+		
+		&:first-of-type {
+			width: 35%;
+		}
+
+		&:last-of-type {
+			width: 60%;
+		}
+	}
+}
+
 .main {
-	padding: 2.5em 0;
+	padding-bottom: 2.5em;
 }
 
 main {
