@@ -2,39 +2,7 @@
 layout: default
 ---
 
-<section>
-	<h2>About Me</h2>
-	<p>Some information about you!</p>
-	<p>A place to include any other types of information that you'd like to include about yourself.</p>
 
-	<p>
-		<a href="{{ site.baseurl }}about">Read more</a>
-	</p>
-</section>
 
-<section>
-	<h2>Projects</h2>
-	<ul>
-		{% for project in site.projects %}
-			<li>
-				<a href="{{ project.url }}">{{ project.title }}</a>
-			</li>
-		{% endfor %}
-	</ul>
-	<p>
-		<a href="{{ site.baseurl }}projects">See all projects</a>
-	</p>
-</section>
 
-<section>
-	<h2>Latest blog</h2>
-	
-	{% for post in site.posts %}
-	  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-	{% endfor %}
-
-	<p>
-		<a href="{{ site.baseurl }}blog">/blog</a>
-	</p>
-</section>
 

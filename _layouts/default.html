@@ -33,25 +33,77 @@
           <span><a href="{{ site.baseurl }}/">{{ site.name }}</a></span>
         </h1>
       </span>
-
-      <ul class="list--social">
-        {% include svg-icons.html %}
-        <li>
-          <span class="header__section">
-            <h1 class="site-name">
-              <span>Online:</span>
-              <span>I'm pretty normal, see?</span>
-            </h1>
-          </span>
-        </li>
-      </ul>
     </header>
 
-    <main id="main" role="main" class="template--{{ page.bodyClass }}">
-      {{ content }}
+    <main id="main" role="main" class="main template--{{ page.bodyClass }}">
+      <article class="" style="width: 40%; display: inline-block; vertical-align: top;">
+        <section class="section">
+          <h2 class="section__title">About Me</h2>
+          <p>Some information about you!</p>
+          <p>A place to include any other types of information that you'd like to include about yourself.</p>
+
+          <p>
+            <a href="/about">Read more</a>
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="section__title">Projects</h2>
+          <ul style="width: 48%; display: inline-block; vertical-align: top;">
+            <li>Commissioned Projects:</li>
+            {% assign projects = site.projects | sort: 'orderId' %}
+            {% for project in projects %}
+              <li>
+                <a href="{{ project.url }}">{{ project.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+
+          <ul style="width: 48%; display: inline-block; vertical-align: top;">
+            <li>Side Projects:</li>
+            <li>
+              <a href="">1</a>
+            </li>
+            <li>
+              <a href="">2</a>
+            </li>
+            <li>
+              <a href="">3</a>
+            </li>
+            <li>
+              <a href="">4</a>
+            </li>
+          </ul>
+          <p>
+            <a href="/projects">See all projects</a>
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="section__title">Latest blog</h2>
+          
+          {% for post in site.posts limit:1 %}
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <div class="post-excerpt" style="width: 50%;">
+              {{ post.excerpt | remove: '<p>' | remove: '</p>' }} ///
+              <a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
+            </div>
+            
+          {% endfor %}
+
+          <p>
+            <a href="/blog">See all posts</a>
+          </p>
+        </section>
+      </article>
+
+      <article style="width: 55%; display: inline-block; vertical-align: top;">
+        {{ content }}
+      </article>
     </main>
     
-    <footer></footer>
+    <footer>
+    </footer>
 
     {% include analytics.html %}
   </body>
