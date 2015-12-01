@@ -17,4 +17,4 @@
 
 ## Contributing
 
-Like I said earlier, if something on the site is just wrong, factually, gramatically, or otherwise, feel free to let me know. I'm also open to design pull-requests. I'm not a great designer–my feelings won't be hurt fi something ought to change. This site isn't an open-source project that'll get you any sort of points, but I'd appreciate it and it'll get you another green square on your activity chart. Thanks!
+Like I said earlier, if something on the site is just wrong, factually, gramatically, or otherwise, feel free to let me know. I'm also open to design pull-requests. I'm an OK designer–my feelings won't be hurt if something ought to change. This site isn't an open-source project that'll get you any sort of points, but I'd appreciate it and it'll get you another green square on your activity chart. Thanks!
