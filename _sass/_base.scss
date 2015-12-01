@@ -34,6 +34,7 @@ body {
 		}
 
 		&:last-of-type {
+			// background: rgba($black, .05);
 			width: 60%;
 		}
 	}
@@ -43,10 +44,34 @@ body {
 	padding-bottom: 2.5em;
 }
 
-main {
-	// padding-bottom: 2.5em;
+.layout {
+	&--project {
+		.projects-section {
+			.section__title {
+				background: $black;
+				color: $white;
+			}
+			// background: rgba($black, .05);
+		}
+	}
 
-	section ~ section {
-		// margin-top: 2.5em;
+	&--blog {
+		.blog-section {
+			.section__title {
+				background: $black;
+				color: $white;
+			}
+			// background: rgba($black, .05);
+		}
+	}
+
+	&--about {
+		.about-section {
+			.section__title {
+				background: $black;
+				color: $white;
+			}
+			// background: rgba($black, .05);
+		}
 	}
 }

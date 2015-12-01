@@ -18,7 +18,7 @@
     </script>
   </head>
 
-  <body>
+  <body class="layout--{{ page.bodyClass }}">
     <header style="border-top: 0.5em solid black;" class="header">
       <span class="header__section">
         <h1 class="site-name">
@@ -35,20 +35,18 @@
       </span>
     </header>
 
-    <main id="main" role="main" class="main template--{{ page.bodyClass }}">
+    <main id="main" role="main" class="main">
       
       <article class="article--home">
-        <section class="section">
+        <section class="section about-section">
           <h2 class="section__title">About Me</h2>
           <p>Some information about you!</p>
           <p>A place to include any other types of information that you'd like to include about yourself.</p>
 
-          <p>
-            <a href="/about">Read more</a>
-          </p>
+          <a class="button" href="/about">Read more</a>
         </section>
 
-        <section class="section">
+        <section class="section projects-section">
           <h2 class="section__title">Projects</h2>
           <ul style="width: 48%; display: inline-block; vertical-align: top;">
             <li>Commissioned Projects:</li>
@@ -75,13 +73,12 @@
               <a href="">4</a>
             </li>
           </ul>
-          <p>
-            <a href="/projects">See all projects</a>
-          </p>
+
+          <a class="button" href="/projects">See all projects</a>
         </section>
 
-        <section class="section">
-          <h2 class="section__title">Latest blog</h2>
+        <section class="section blog-section">
+          <h2 class="section__title">Latest Blog</h2>
           
           {% for post in site.posts limit:1 %}
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
@@ -92,9 +89,7 @@
             
           {% endfor %}
 
-          <p>
-            <a href="/blog">See all posts</a>
-          </p>
+          <a class="button" href="/blog">See all posts</a>
         </section>
       </article>
 

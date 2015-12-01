@@ -1,5 +1,6 @@
 ---
 layout: project
+bodyClass: project
 title: "Erwin Penland"
 orderId: 002
 builtIn: "Spring 2015"
