@@ -13,7 +13,7 @@ body {
 		weight: $fw-normal;
 	}
 	padding-left: calc((55em/16) + 2em + 1.5em);
-  	padding-right: calc((55em/16) - 2em);
+  	// padding-right: calc((55em/16) - 2em);
   	position: relative;
 
   	// transition: .25s color ease;
@@ -25,23 +25,26 @@ body {
 .article {
 	&--home {
 		border-top: .5em solid $black;
-		display: inline-block;
+		// display: inline-block;
 		padding-top: 2.5em;
-		vertical-align: top;
+		// vertical-align: top;
 		
 		&:first-of-type {
+			margin-right: 1em;
 			width: 35%;
 		}
 
 		&:last-of-type {
 			// background: rgba($black, .05);
-			width: 60%;
+			margin-left: 1em;
+			width: 65%;
 		}
 	}
 }
 
 .main {
 	padding-bottom: 2.5em;
+	display: -webkit-flex;display: -ms-flexbox;display: flex;
 }
 
 .layout {

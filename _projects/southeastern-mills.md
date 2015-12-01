@@ -9,4 +9,7 @@ technologies:
   - Javascript / jQuery
   - Twig Templating
   - Slim Framework
+screenshots:
+  - recipes--desktop.jpg
+  - homepage--mobile.jpg
 ---

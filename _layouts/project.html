@@ -17,6 +17,15 @@ bodyClass: layout-project
       {% endfor %}
     </ul>
 
+    <section class="screenshots">
+      <div class="screenshot screenshot--desktop">
+        <img src="/images/screenshots/{{ page.title | slugify }}/{{ page.screenshots[0] }}" alt="">
+      </div>
+      <div class="screenshot screenshot--mobile">
+        <img src="/images/screenshots/{{ page.title | slugify }}/{{ page.screenshots[1] }}" alt="">
+      </div>
+    </section>
+
     {{ content }}
   </main>
 
