@@ -7,12 +7,13 @@ html, body, .header { min-height: 100vh; }
 body {
 	// color: rgba($black, 0);
 	color: $black;
+	display: -webkit-flex;display: -ms-flexbox;display: flex;
 	font: {
 		family: $adelle;
 		size: 16px;
 		weight: $fw-normal;
 	}
-	padding-left: calc((55em/16) + 2em + 1.5em);
+	// padding-left: calc((55em/16) + 2em + 1.5em);
   	// padding-right: calc((55em/16) - 2em);
   	position: relative;
 
@@ -31,18 +32,19 @@ body {
 		
 		&:first-of-type {
 			margin-right: 1em;
-			width: 35%;
+			width: 30%;
 		}
 
 		&:last-of-type {
 			// background: rgba($black, .05);
 			margin-left: 1em;
-			width: 65%;
+			width: 70%;
 		}
 	}
 }
 
 .main {
+	margin-left: 1em;
 	padding-bottom: 2.5em;
 	display: -webkit-flex;display: -ms-flexbox;display: flex;
 }
