@@ -12,6 +12,10 @@ $section: 'section';
 		padding-top: 2.5em;
 	}
 
+	&.meta {
+		margin-bottom: 1em;
+	}
+
 	.projects & {
 		position: relative;
 		z-index: 0;
@@ -69,7 +73,7 @@ $section: 'section';
 					overflow: hidden;
 					position: absolute;
 					transition: opacity .25s ease, height .25s ease .25s;
-					z-index: 3;	
+					z-index: 3;
 				}
 
 				&:hover {
@@ -96,7 +100,6 @@ $section: 'section';
 
 			.#{$section}__title {
 				// transform: translateX(2.5%);
-				
 			}
 		}
 	}
@@ -104,14 +107,31 @@ $section: 'section';
 	~ .section {
 		border-top: 1px solid $black;
 	}
-	
+
 	&__title {
 		font-size: 1.5em;
 		line-height: 1;
 		margin-bottom: 0.25em;
-		
+
 		@media screen and (min-width: 500px) {
+			display: inline-block;
 			font-size: 3.5em;
+			vertical-align: baseline;
+
+			+ p {
+				font-size: 0.825rem;
+				font-weight: $fw-normal;
+			}
+		}
+
+		&--secondary {
+			font-size: 1.15em;
+			line-height: 1;
+			margin-bottom: 0.25em;
+
+			@media screen and (min-width: 500px) {
+				font-size: 1.5em;
+			}
 		}
 	}
 }

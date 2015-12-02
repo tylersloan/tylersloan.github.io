@@ -3,8 +3,10 @@ layout: project
 title: "Southeastern Mills"
 orderId: 001
 builtIn: "Summer 2015"
+client: "Southeastern Mills"
 designer: "Richelle Jones"
 company: "Erwin Penland"
+liveUrl: https://sem-pro.com
 technologies:
   - HTML
   - SCSS

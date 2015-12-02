@@ -1,5 +1,11 @@
 .project {
+	&__credit {
+		margin-right: 0.5em;
+	}
+}
 
+.meta {
+	font-size: 0.825em;
 }
 
 .screenshots {
@@ -7,11 +13,25 @@
 }
 
 .screenshot {
-	border: 1px solid $white;
-	border-radius: 2px;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	border: {
+		color: $white;
+		width: 1em;
+		style: solid;
+	}
+	border-radius: 5px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19),
+				0 6px 6px rgba(0,0,0,0.23),
+				0 0 1px rgba($black, 1),
+				inset 0 0 1px $black;
 	height: 25em;
 	overflow: scroll;
+
+	span {
+		border-radius: 1px;
+		display: block;
+		position: relative;
+		z-index: -1;
+	}
 
 	&:first-of-type {
 		margin-right: 0.5em;

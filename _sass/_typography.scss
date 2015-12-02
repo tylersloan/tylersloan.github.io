@@ -6,6 +6,11 @@ p {
 	.page & {
 		font-size: 1.15em;
 	}
+
+	&.link {
+		display: inline-block;
+		vertical-align: baseline;
+	}
 }
 
 a {
