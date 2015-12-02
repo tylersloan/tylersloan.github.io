@@ -33,24 +33,18 @@
 		z-index: -1;
 	}
 
-	&:first-of-type {
-		margin-right: 0.5em;
-	}
-
-	&:last-of-type {
-		margin-left: 0.5em;
-	}
-
 	img {
 		display: block;
 		width: 100%;
 	}
 
 	&--desktop {
+		margin-right: 0.5em;
 		width: 70%;
 	}
 
 	&--mobile {
+		margin-left: 0.5em;
 		width: 30%;
 	}
 }

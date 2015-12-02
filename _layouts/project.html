@@ -18,10 +18,7 @@ bodyClass: layout-project
           {% if page.client %}<span class="project__credit">Client: {{ page.client }}</span>{% endif %}
         </li>
         <li class="list--inline__item">
-          {% if page.company %}<span class="project__credit">While at {{ page.company }}</span>{% endif %}
-        </li>
-        <li class="list--inline__item">
-          {% if page.designer %}<span class="project__credit">Designed by {{ page.designer }}</span>{% endif %}
+          {% if page.agency %}<span class="project__credit">Agency: {{ page.agency }}</span>{% endif %}
         </li>
       </ul>
 
@@ -34,16 +31,22 @@ bodyClass: layout-project
     </section>
 
     <section class="screenshots">
-      <div class="screenshot screenshot--desktop">
-        <span><img src="/images/screenshots/{{ page.title | slugify }}/{{ page.screenshots[0] }}" alt=""></span>
-      </div>
-      <div class="screenshot screenshot--mobile">
-        <span><img src="/images/screenshots/{{ page.title | slugify }}/{{ page.screenshots[1] }}" alt=""></span>
-      </div>
+      <figure class="screenshot--desktop">
+        <div class="screenshot">
+          <span><img src="/images/screenshots/{{ page.title | slugify }}/desktop.jpg" alt="Screenshot of {{ page.title }} desktop view."></span>
+        </div>
+        <figcaption class="hidden-text">Screenshot of {{ page.title }} desktop&nbsp;view.</figcaption>
+      </figure>
+      <figure class="screenshot--mobile">
+        <div class="screenshot">
+          <span><img src="/images/screenshots/{{ page.title | slugify }}/mobile.jpg" alt="Screenshot of {{ page.title }} mobile view."></span>
+        </div>
+        <figcaption class="hidden-text">Screenshot of {{ page.title }} mobile&nbsp;view.</figcaption>
+      </figure>
     </section>
 
     <section class="section">
-      <h3 class="section__title--secondary">Southeastern Mills is Cool</h3>
+      <h3 class="section__title--secondary">{{ page.title }} is Cool</h3>
       {{ content }}
     </section>
   </main>

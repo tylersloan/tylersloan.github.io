@@ -1,20 +1,21 @@
 ---
 layout: project
-title: "Southeastern Mills"
-orderId: 001
-builtIn: "Summer 2015"
-client: "Southeastern Mills"
-agency: "Erwin Penland"
-liveUrl: https://sem-pro.com
+title: "Carolina Oaks"
+orderId: 006
+builtIn: "Winter 2013"
+client: "Carolina Oaks"
+agency: "Shed Labs"
+liveUrl: http://carolina-oaks.com/
 technologies:
   - HTML
   - SCSS
   - Javascript / jQuery
-  - Twig Templating
-  - Slim Framework
+  - PHP
+  - Wufoo
+  - Google Maps
 screenshots:
-  - recipes--desktop.jpg
-  - homepage--mobile.jpg
+  - desktop.jpg
+  - mobile.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam numquam perferendis commodi laboriosam nostrum voluptatibus dolorum odit sequi similique, ad iure fuga harum magni, id beatae mollitia placeat enim exercitationem.
