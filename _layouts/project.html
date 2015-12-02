@@ -11,7 +11,12 @@ bodyClass: layout-project
   </header>
   
   <main>
+    <section class="section">
+      {% if page.company %}<p>Built while at {{ page.company }}</p>{% endif %}
+      {% if page.designer %}<p>Designed by {{ page.designer }}</p>{% endif %}
+    </section>
     <ul class="list--inline">
+      <li>Tools used:</li>
       {% for tech in page.technologies %}
       <li class="list--inline__item">{{ tech }}</li>
       {% endfor %}
@@ -26,7 +31,10 @@ bodyClass: layout-project
       </div>
     </section>
 
-    {{ content }}
+    <section class="section">
+      <h3 class="section__title">Southeastern Mills is Cool</h3>
+      {{ content }}
+    </section>
   </main>
 
   <footer></footer>
