@@ -1,19 +1,16 @@
 ---
 layout: page
-title: About
+title: Tyler Graham Sloan
 bodyClass: about
 permalink: /about/
 ---
 
-Some information about you!
+<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat eligendi deserunt nostrum vitae, veniam porro deleniti quo molestias, enim placeat quibusdam cumque eos quam dolorem in eum tempora, architecto!</p></div>
+<br>
+<div><p>Saepe illum provident nulla esse magnam voluptates tenetur! Doloremque nulla expedita dicta libero pariatur ipsam nemo, et porro, ut facere laborum, consequuntur tempora praesentium hic! Animi est rem ex quis.</p></div>
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+<br>
+<br>
 
 <ul class="list--social">
   {% include svg-icons.html %}

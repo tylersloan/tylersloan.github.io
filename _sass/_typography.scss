@@ -2,6 +2,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: $fw-heavy;
 }
 
+p {
+	.page & {
+		font-size: 1.15em;
+	}
+}
+
 a {
 	text-decoration: none;
 	color: $color;

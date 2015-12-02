@@ -13,6 +13,7 @@ body {
 		size: 16px;
 		weight: $fw-normal;
 	}
+	line-height: 1.4;
 	// padding-left: calc((55em/16) + 2em + 1.5em);
   	// padding-right: calc((55em/16) - 2em);
   	position: relative;
@@ -26,9 +27,7 @@ body {
 .article {
 	&--home {
 		border-top: .5em solid $black;
-		// display: inline-block;
 		padding-top: 2.5em;
-		// vertical-align: top;
 		
 		&:first-of-type {
 			margin-right: 1em;
@@ -36,17 +35,20 @@ body {
 		}
 
 		&:last-of-type {
-			// background: rgba($black, .05);
 			margin-left: 1em;
+			padding-right: 5vw;
 			width: 70%;
 		}
 	}
 }
 
 .main {
-	margin-left: 1em;
+	// margin-left: 1em;
 	padding-bottom: 2.5em;
-	display: -webkit-flex;display: -ms-flexbox;display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: calc(100vw - ( (55em/16) + 2em ));
 }
 
 .layout {

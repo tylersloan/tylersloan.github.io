@@ -3,7 +3,7 @@ layout: default
 bodyClass: project
 ---
 
-<article class="projects">
+<article class="projects article--home">
   {% assign projects = site.projects | sort: 'orderId' %}
   {% for project in projects %}
     <section class="section {{ project.title|slugify }}">
