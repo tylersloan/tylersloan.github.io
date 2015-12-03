@@ -8,4 +8,5 @@ technologies:
   - SCSS
   - Javascript / jQuery
   - Middleman
+screenshots: true
 ---

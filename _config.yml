@@ -17,6 +17,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  open-source-projects:
+    output: true
+    permalink: /projects/:path/
 
 #
 # Flags below are optional

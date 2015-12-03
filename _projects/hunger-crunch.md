@@ -9,4 +9,5 @@ liveUrl: http://www.hungercrunch.com/
 technologies:
   - HTML
   - SCSS
+screenshots: true
 ---

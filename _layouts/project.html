@@ -22,14 +22,17 @@ bodyClass: layout-project
         </li>
       </ul>
 
-      <ul class="list--inline">
-        <li class="list--inline__item">Tools used:</li>
-        {% for tech in page.technologies %}
-        <li class="list--inline__item">{{ tech }}</li>
-        {% endfor %}
-      </ul>
+      {% if  page.technologies %}
+       <ul class="list--inline">
+          <li class="list--inline__item">Tools used:</li>
+          {% for tech in page.technologies %}
+          <li class="list--inline__item">{{ tech }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </section>
 
+    {% if page.screenshots %}
     <section class="screenshots">
       <figure class="screenshot--desktop">
         <div class="screenshot">
@@ -44,6 +47,8 @@ bodyClass: layout-project
         <figcaption class="hidden-text">Screenshot of {{ page.title }} mobile&nbsp;view.</figcaption>
       </figure>
     </section>
+    {% endif %}
+
 
     <section class="section">
       <h3 class="section__title--secondary">{{ page.title }} is Cool</h3>

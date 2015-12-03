@@ -10,4 +10,5 @@ technologies:
   - HTML
   - SCSS
   - Javascript / jQuery
+screenshots: true
 ---

@@ -1,18 +1,15 @@
 ---
 layout: project
-title: "Southeastern Mills"
-orderId: 001
-builtIn: "Summer 2015"
-client: "Southeastern Mills"
-agency: "Erwin Penland"
-liveUrl: https://sem-pro.com
+title: "Is That Hashtag Taken?"
+orderId: 002
+liveUrl: https://github.com/tylersloan/is-that-hashtag-taken
 technologies:
   - HTML
   - SCSS
   - Javascript / jQuery
-  - Twig Templating
-  - Slim Framework
-screenshots: true
+  - PHP
+  - Wufoo
+  - Google Maps
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam numquam perferendis commodi laboriosam nostrum voluptatibus dolorum odit sequi similique, ad iure fuga harum magni, id beatae mollitia placeat enim exercitationem.
