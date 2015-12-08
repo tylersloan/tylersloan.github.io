@@ -2,21 +2,20 @@
 layout: project
 bodyClass: project
 title: "Is That Hashtag Taken?"
+headline: "Hashtags are dumb–make sure yours isn't taken already"
 orderId: 002
 githubUrl: https://github.com/tylersloan/is-that-hashtag-taken
 technologies:
   - HTML
   - SCSS
-  - Javascript / jQuery
-  - PHP
-  - Wufoo
-  - Google Maps
+  - Ruby
+  - Sinatra
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam numquam perferendis commodi laboriosam nostrum voluptatibus dolorum odit sequi similique, ad iure fuga harum magni, id beatae mollitia placeat enim exercitationem.
+<br/>
 
-Voluptatem deserunt consequuntur eligendi fugiat, vero. Veniam nulla eligendi nihil non fuga officiis, hic necessitatibus repellat suscipit placeat, cupiditate impedit animi, nemo iure aut dolorem asperiores, atque sint assumenda temporibus.
+This is sort of silly, but it was an excercise in APIs and Ruby/Sinatra.
 
-Voluptate illo nesciunt architecto repellendus qui, sequi veritatis omnis obcaecati, officia ratione, similique aperiam nemo autem quae dicta minus tempore minima perspiciatis incidunt odit. Eligendi nostrum repellendus dolorem suscipit ad!
+<br/>
 
-Expedita modi, accusantium et, dolorum dolor iure nobis tempora libero corporis, possimus, nulla ut fugit. Iusto ex animi ad placeat ipsa, nihil aspernatur voluptate harum obcaecati accusamus, reprehenderit, neque. Rem!
+I was sitting with friends on a buddy's wedding day while everyone tried to figure out what his hashtag should be. We wanted to know if "that one" had been taken yet so I though, "Hey, I bet I can make an app to just look these words up on whatever social media site." I stopped with Instagram and Twitter because it's my little thing and that's all I cared about.
