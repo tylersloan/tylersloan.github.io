@@ -8,8 +8,24 @@ $section: 'section';
 
 .#{$section} {
 	~ .#{$section} {
+		.projects & {
+			@media screen and (max-width: 767px) {
+				padding-bottom: 1em;
+				// padding-top: 1em;
+			}
+
+			@media screen and (min-width: 768px) {
+				border-top: 1px solid $black;
+				padding-bottom: 2.5em;
+				padding-top: 2.5em;
+			}
+
+			@media screen and (min-width: 1000px) {
+				margin-top: 0;
+			}
+		}
+
 		@media screen and (min-width: 1000px) {
-			border-top: 1px solid $black;
 			margin-top: 2.5em;
 			padding-top: 2.5em;
 		}
@@ -23,15 +39,28 @@ $section: 'section';
 		position: relative;
 		padding-bottom: 1em;
 
-		.#{$section} ~ .#{$section} {
-			padding-top: 1em
+		@media screen and (max-width: 767px) {
+
 		}
 
 		@media screen and (min-width: 768px) {
-			border-top: 1px solid $black;
-			margin-top: 2.5em;
-			padding-top: 2.5em;
+			padding-bottom: 2.5em;
 		}
+
+		// .#{$section} ~ .#{$section} {
+		// 	padding-top: 1em;
+
+		// 	@media screen and (min-width: 768px) {
+		// 		padding-bottom: 2.5em;
+		// 		padding-top: 2.5em;
+		// 	}
+
+		// 	@media screen and (min-width: 768px) {
+		// 		border-top: 1px solid $black;
+		// 		margin-top: 2.5em;
+		// 		padding-top: 2.5em;
+		// 	}
+		// }
 
 		.#{$section}__title {
 			margin-bottom: 0;
