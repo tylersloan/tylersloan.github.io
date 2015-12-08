@@ -41,21 +41,6 @@ $section: 'section';
 			padding-bottom: 2.5em;
 		}
 
-		// .#{$section} ~ .#{$section} {
-		// 	padding-top: 1em;
-
-		// 	@media screen and (min-width: 768px) {
-		// 		padding-bottom: 2.5em;
-		// 		padding-top: 2.5em;
-		// 	}
-
-		// 	@media screen and (min-width: 768px) {
-		// 		border-top: 1px solid $black;
-		// 		margin-top: 2.5em;
-		// 		padding-top: 2.5em;
-		// 	}
-		// }
-
 		.#{$section}__title {
 			margin-bottom: 0;
 		}
@@ -79,31 +64,35 @@ $section: 'section';
 		a {
 			display: inline-block;
 			position: relative;
-			transition: color .25s ease .15s;
 
-			&:after {
-				bottom: 0;
-				color: black;
-				content: attr(data-title);
-				display: block;
-				height: 0;
-				opacity: 0;
-				left: 0;
-				overflow: hidden;
-				position: absolute;
-				transition: opacity .25s ease, height .25s ease .25s;
-				z-index: 3;
-			}
-
-			&:hover {
-				color: black;
+			@media screen and (min-width: 450px) {
+				transition: color .25s ease .15s;
 
 				&:after {
-					bottom: auto;
-					height: 100%;
-					top: 0;
-					opacity: 1;
-					transition: opacity .25s ease, height .25s ease;
+					bottom: 0;
+					color: black;
+					content: attr(data-title);
+					display: block;
+					height: 0;
+					opacity: 0;
+					left: 0;
+					overflow: hidden;
+					position: absolute;
+					transition: opacity .25s ease, height .25s ease .25s;
+					z-index: 3;
+				}
+
+				&:hover,
+				&:focus {
+					color: black;
+
+					&:after {
+						bottom: auto;
+						height: 100%;
+						top: 0;
+						opacity: 1;
+						transition: opacity .25s ease, height .25s ease;
+					}
 				}
 			}
 		}
