@@ -13,10 +13,16 @@ technologies:
   - Google Maps
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam numquam perferendis commodi laboriosam nostrum voluptatibus dolorum odit sequi similique, ad iure fuga harum magni, id beatae mollitia placeat enim exercitationem.
+The project currently known as The Cookbook App started years ago when I was but a student at The Iron Yard. The task was to create an app with Backbone.js. I made an OK amount of progress for having only been writing Javascript for a couple months, but once the class was over and I was picking up real work, I dropped this app as a side project and focussed on getting paid. (I really wanted to quit working at the restaurant!) Anyway, I moved it off my plate but I could never really move it out of my mind. The unfinished app sort of haunted me.
 
-Voluptatem deserunt consequuntur eligendi fugiat, vero. Veniam nulla eligendi nihil non fuga officiis, hic necessitatibus repellat suscipit placeat, cupiditate impedit animi, nemo iure aut dolorem asperiores, atque sint assumenda temporibus.
+<br />
 
-Voluptate illo nesciunt architecto repellendus qui, sequi veritatis omnis obcaecati, officia ratione, similique aperiam nemo autem quae dicta minus tempore minima perspiciatis incidunt odit. Eligendi nostrum repellendus dolorem suscipit ad!
+I think it haunted me for two reasons. One, Backbone was hard for me to learn. I feel like once I had an excuse to put the hard project down I took it. Two, I really liked working on it, and a few people were actually looking forward to suing it. I feel like a bit of a failure because of both of said reasons and I can't let that be anymore.
 
-Expedita modi, accusantium et, dolorum dolor iure nobis tempora libero corporis, possimus, nulla ut fugit. Iusto ex animi ad placeat ipsa, nihil aspernatur voluptate harum obcaecati accusamus, reprehenderit, neque. Rem!
+<br />
+
+Although I certainly failed to launch this, again, at the end of Summer 2015, I'm not letting it go.
+
+<br />
+
+What is it, anyway? It's a personal recipe book online (and offline). It's not for sharing or finding recipes, but for storing your secret family recipes and scaling them quickly and accurately.
