@@ -19,40 +19,90 @@ body {
 
 .article {
 	&--home {
-		border-top: .5em solid $black;
+		border-top: .0625em solid $black;
 		padding-top: 2.5em;
 		padding-bottom: 2.5em;
 
-		&:only-child {
-			width: 50% !important;
+		@media screen and (max-width: 999px) {
+
+			&:only-child {
+				width: 100% !important;
+			}
+
+			&:first-of-type {
+				display: -webkit-flex;display: -ms-flexbox;display: flex;
+				-webkit-justify-content: space-between;-ms-flex-pack: justify;justify-content: space-between;
+				padding-bottom: 1em;
+				padding-top: 1em;
+				width: 100%;
+
+				.section__title {
+					line-height: 1.3;
+					margin-bottom: 0;
+				}
+
+				* :not(:first-child) {
+					display: none;
+				}
+
+				.section {
+				}
+			}
+
+			&:last-of-type {
+				width: 100%;
+			}
 		}
 
-		&:first-of-type {
-			margin-right: 1em;
-			width: 30%;
-		}
+		@media screen and (min-width: 1000px) {
+			.section__title {
+				pointer-events: none;
 
-		&:last-of-type {
-			margin-left: 1em;
-			padding-right: 5vw;
-			width: 70%;
+				a {
+					color: $black;
+				}
+			}
+
+			&:only-child {
+				width: 50% !important;
+			}
+
+			&:first-of-type {
+				margin-right: 1em;
+				width: calc(30% - 1em);
+			}
+
+			&:last-of-type {
+				margin-left: 1em;
+				padding-right: 5vw;
+				width: calc(70% - 1em);
+			}
 		}
 	}
 }
 
 .main {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	width: calc(100vw - ( (55em/16) + 2em ));
+	@media screen and (max-width: 1000px) {
+		width: 100%;
+	}
+
+	@media screen and (min-width: 1000px) {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-wrap: wrap;
+		width: calc(100vw - ( (55em/16) + 2em ));
+	}
 }
 
 .layout {
 	&--project {
 		.projects-section {
 			.section__title {
-				background: $black;
-				color: $white;
+				a {
+					background: $black;
+					color: $white;
+				}
 			}
 		}
 	}
@@ -60,8 +110,10 @@ body {
 	&--blog {
 		.blog-section {
 			.section__title {
-				background: $black;
-				color: $white;
+				a {
+					background: $black;
+					color: $white;
+				}
 			}
 		}
 	}
@@ -69,8 +121,10 @@ body {
 	&--about {
 		.about-section {
 			.section__title {
-				background: $black;
-				color: $white;
+				a {
+					background: $black;
+					color: $white;
+				}
 			}
 		}
 	}

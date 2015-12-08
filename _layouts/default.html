@@ -30,7 +30,9 @@
       <article class="article--home">
         <section class="section about-section">
           <header>
-            <h2 class="section__title">About Me</h2>
+            <h2 class="section__title">
+              <a data-title="About Me" href="/about">About Me</a>
+            </h2>
           </header>
           <p>Some information about you!</p>
           <p>A place to include any other types of information that you'd like to include about yourself.</p>
@@ -40,9 +42,11 @@
 
         <section class="section projects-section">
           <header>
-            <h2 class="section__title">Projects</h2>
+            <h2 class="section__title">
+              <a data-title="Projects" href="/projects">Projects</a>
+            </h2>
           </header>
-          <ul style="width: 48%; display: inline-block; vertical-align: top;">
+          <ul>
             <li>Commercial Projects:</li>
             {% assign projects = site.projects | sort: 'orderId' %}
             {% for project in projects %}
@@ -52,7 +56,7 @@
             {% endfor %}
           </ul>
 
-          <ul style="width: 48%; display: inline-block; vertical-align: top;">
+          <ul>
             <li>Open-Source Projects:</li>
             {% assign projects = site.open-source-projects | sort: 'orderId' %}
             {% for project in projects %}
@@ -67,7 +71,9 @@
 
         <section class="section blog-section">
           <header>
-            <h2 class="section__title">Blog</h2>
+            <h2 class="section__title">
+              <a data-title="Blog" href="/blog">Blog</a>
+            </h2>
           </header>
 
           {% for post in site.posts limit:1 %}
