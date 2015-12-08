@@ -1,5 +1,6 @@
 ---
 layout: project
+bodyClass: project
 title: "Carolina Oaks"
 orderId: 006
 builtIn: "Winter 2013"

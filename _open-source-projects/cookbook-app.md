@@ -1,5 +1,6 @@
 ---
 layout: project
+bodyClass: project
 title: "Cookbook App"
 orderId: 001
 githubUrl: https://github.com/tylersloan/cookbook-app

@@ -1,5 +1,6 @@
 ---
 layout: project
+bodyClass: project
 title: "Is That Hashtag Taken?"
 orderId: 002
 githubUrl: https://github.com/tylersloan/is-that-hashtag-taken

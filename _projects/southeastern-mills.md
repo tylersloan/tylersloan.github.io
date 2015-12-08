@@ -1,5 +1,6 @@
 ---
 layout: project
+bodyClass: project
 title: "Southeastern Mills"
 orderId: 001
 builtIn: "Summer 2015"

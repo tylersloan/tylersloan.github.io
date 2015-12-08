@@ -1,5 +1,6 @@
 ---
 layout: project
+bodyClass: project
 title: "CIT Bank"
 orderId: 004
 builtIn: "Summer 2014"

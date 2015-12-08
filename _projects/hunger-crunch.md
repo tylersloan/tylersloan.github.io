@@ -1,5 +1,6 @@
 ---
 layout: project
+bodyClass: project
 title: Hunger Crunch
 orderId: 005
 builtIn: "Spring 2014"
