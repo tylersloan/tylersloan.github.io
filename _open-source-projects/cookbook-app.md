@@ -2,6 +2,7 @@
 layout: project
 bodyClass: project
 title: "Cookbook App"
+headline: "A super-cool, feature-filled, un-finished online recipe book"
 orderId: 001
 githubUrl: https://github.com/tylersloan/cookbook-app
 technologies:
