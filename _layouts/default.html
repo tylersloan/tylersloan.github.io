@@ -46,25 +46,28 @@
               <a data-title="Projects" href="/projects">Projects</a>
             </h2>
           </header>
-          <ul>
-            <li>Commercial Projects:</li>
-            {% assign projects = site.projects | sort: 'orderId' %}
-            {% for project in projects %}
-              <li>
-                <a href="{{ project.url }}">{{ project.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
 
-          <ul>
-            <li>Open-Source Projects:</li>
-            {% assign projects = site.open-source-projects | sort: 'orderId' %}
-            {% for project in projects %}
-              <li>
-                <a href="{{ project.url }}">{{ project.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
+          <section class="section half">
+            <ul class="column">
+              <li>Commercial Projects:</li>
+              {% assign projects = site.projects | sort: 'orderId' %}
+              {% for project in projects %}
+                <li>
+                  <a href="{{ project.url }}">{{ project.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+
+            <ul class="column">
+              <li>Open-Source Projects:</li>
+              {% assign projects = site.open-source-projects | sort: 'orderId' %}
+              {% for project in projects %}
+                <li>
+                  <a href="{{ project.url }}">{{ project.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </section>
 
           <a class="button" href="/projects">See all projects</a>
         </section>
