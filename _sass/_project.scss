@@ -9,7 +9,10 @@
 }
 
 .screenshots {
-	display: -webkit-flex;display: -ms-flexbox;display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .screenshot {
@@ -23,8 +26,7 @@
 				0 6px 6px rgba(0,0,0,0.23),
 				0 0 1px rgba($black, 1),
 				inset 0 0 1px $black;
-	height: 50vh;
-	min-height: 25em;
+	min-height: 12.5em;
 	overflow: scroll;
 
 	span {
@@ -41,11 +43,19 @@
 
 	&--desktop {
 		margin-right: 0.5em;
-		width: 70%;
+		width: calc(70% - 0.5em);
 	}
 
 	&--mobile {
 		margin-left: 0.5em;
-		width: 30%;
+		width: calc(30% - 0.5em);
+	}
+
+	@media screen and (max-width: 768px) {
+		height: 30vh;
+	}
+
+	@media screen and (min-width: 769px) {
+		height: 50vh;
 	}
 }

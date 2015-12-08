@@ -18,14 +18,30 @@ $section: 'section';
 
 	.projects & {
 		position: relative;
+
+		.#{$section}__title {
+			margin-bottom: 0;
+		}
 	}
 
 	~ .section {
 		border-top: 1px solid $black;
 	}
 
-	.#{$section}__title {
-		transition: .3s ease all;
+	&__title {
+		font-size: 1.5em;
+		line-height: 0.9;
+		margin-bottom: 0.25em;
+
+		&--secondary {
+			font-size: 1.15em;
+			line-height: 1;
+			margin-bottom: 0.25em;
+
+			@media screen and (min-width: 500px) {
+				font-size: 1.5em;
+			}
+		}
 
 		a {
 			display: inline-block;
@@ -58,12 +74,6 @@ $section: 'section';
 				}
 			}
 		}
-	}
-
-	&__title {
-		font-size: 1.5em;
-		line-height: 1;
-		margin-bottom: 0.25em;
 
 		@media screen and (min-width: 500px) {
 			display: inline-block;
@@ -73,16 +83,6 @@ $section: 'section';
 			+ p {
 				font-size: 0.825rem;
 				font-weight: $fw-normal;
-			}
-		}
-
-		&--secondary {
-			font-size: 1.15em;
-			line-height: 1;
-			margin-bottom: 0.25em;
-
-			@media screen and (min-width: 500px) {
-				font-size: 1.5em;
 			}
 		}
 	}
