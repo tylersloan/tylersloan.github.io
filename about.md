@@ -12,6 +12,9 @@ permalink: /about/
 <br>
 <br>
 
+# todo:
+# put what you are readin adn/or what classes you are taking or what tech you're studying or something like this
+
 <ul class="list--social">
   {% include svg-icons.html %}
 </ul>
