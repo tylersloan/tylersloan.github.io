@@ -25,14 +25,14 @@ $section: 'section';
 			}
 		}
 
+		.project & {
+			padding-top: 1em;
+		}
+
 		@media screen and (min-width: 1000px) {
-			margin-top: 2.5em;
+			// margin-top: 2.5em;
 			padding-top: 2.5em;
 		}
-	}
-
-	&.meta {
-		margin-bottom: 1em;
 	}
 
 	.projects & {
