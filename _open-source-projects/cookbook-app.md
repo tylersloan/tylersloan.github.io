@@ -2,7 +2,7 @@
 layout: project
 title: "Cookbook App"
 orderId: 001
-liveUrl: https://github.com/tylersloan/cookbook-app
+githubUrl: https://github.com/tylersloan/cookbook-app
 technologies:
   - HTML
   - SCSS

@@ -8,7 +8,12 @@ bodyClass: layout-project
     <h2 class="section__title">
       {{ page.title }}
     </h2>
+
+    {% if page.liveUrl %}
     <p class="link"><a href="{{ page.liveUrl }}" target="_blank">View Live Site</a></p>
+    {% elsif page.githubUrl %}
+    <p class="link"><a href="{{ page.githubUrl }}" target="_blank">View on Github</a></p>
+    {% endif %}
   </header>
 
   <main>

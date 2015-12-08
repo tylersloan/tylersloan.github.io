@@ -2,7 +2,7 @@
 layout: project
 title: "Is That Hashtag Taken?"
 orderId: 002
-liveUrl: https://github.com/tylersloan/is-that-hashtag-taken
+githubUrl: https://github.com/tylersloan/is-that-hashtag-taken
 technologies:
   - HTML
   - SCSS
