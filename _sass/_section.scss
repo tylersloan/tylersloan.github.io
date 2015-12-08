@@ -28,7 +28,7 @@ $section: 'section';
 	}
 
 	&__title {
-		font-size: 1.5em;
+		font-size: 1.15em;
 		line-height: 0.9;
 		margin-bottom: 0.25em;
 
@@ -72,6 +72,10 @@ $section: 'section';
 					transition: opacity .25s ease, height .25s ease;
 				}
 			}
+		}
+
+		@media screen and (min-width: 450px) {
+			font-style: 1.5em;
 		}
 
 		@media screen and (min-width: 768px) {

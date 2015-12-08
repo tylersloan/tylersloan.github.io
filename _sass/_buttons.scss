@@ -1,7 +1,14 @@
 .button {
-	background: $color;
-	color: $white;
+	color: $color;
 	display: inline-block;
-	margin-top: 1em;
-	padding: 0.625em;
+	font-weight: $fw-heavy;
+	padding: 0.625em 0.625em 0.625em 0;
+
+	@media screen and (min-width: 768px) {
+		background: $color;
+		color: $white;
+		font-weight: $fw-normal;
+		margin-top: 1em;
+		padding: 0.625em;
+	}
 }
