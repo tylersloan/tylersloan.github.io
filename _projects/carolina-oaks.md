@@ -2,10 +2,14 @@
 layout: project
 bodyClass: project
 title: "Carolina Oaks"
+headline: ""
 orderId: 006
 builtIn: "Winter 2013"
 client: "Carolina Oaks"
-agency: "Shed Labs"
+headline: "Going to the dentist can be difficult. It doesn’t have to be."
+agency:
+ - "Shed Labs"
+ - "http://shedlabs.com/"
 liveUrl: http://carolina-oaks.com/
 technologies:
   - HTML
@@ -14,15 +18,16 @@ technologies:
   - PHP
   - Wufoo
   - Google Maps
-screenshots:
-  - desktop.jpg
-  - mobile.jpg
+screenshots: true
+logo: true
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam numquam perferendis commodi laboriosam nostrum voluptatibus dolorum odit sequi similique, ad iure fuga harum magni, id beatae mollitia placeat enim exercitationem.
+No, you still can't go to the dentist online, but you sure can set up an appointment there.
 
-Voluptatem deserunt consequuntur eligendi fugiat, vero. Veniam nulla eligendi nihil non fuga officiis, hic necessitatibus repellat suscipit placeat, cupiditate impedit animi, nemo iure aut dolorem asperiores, atque sint assumenda temporibus.
+<br/>
 
-Voluptate illo nesciunt architecto repellendus qui, sequi veritatis omnis obcaecati, officia ratione, similique aperiam nemo autem quae dicta minus tempore minima perspiciatis incidunt odit. Eligendi nostrum repellendus dolorem suscipit ad!
+I was able to work with the amazing design studio, Shed Labs, to deliver a really beautiful, digestable brochure website for Carolina Oaks dentistry.
 
-Expedita modi, accusantium et, dolorum dolor iure nobis tempora libero corporis, possimus, nulla ut fugit. Iusto ex animi ad placeat ipsa, nihil aspernatur voluptate harum obcaecati accusamus, reprehenderit, neque. Rem!
+<br/>
+
+With a growing number of locations, this site makes it super-easy for visitors to figure out which location is most convenient, how to contact them, and even who the in-office dentists are. Their goal to make everyone feel welcome and invited into their office was one I was happy to help with.

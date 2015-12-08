@@ -5,15 +5,20 @@ title: "Southeastern Mills"
 orderId: 001
 builtIn: "Summer 2015"
 client: "Southeastern Mills"
-agency: "Erwin Penland"
+headline: "Creating best-in-business solutions for the food industry and showing them off with a best-in-business website."
+agency:
+ - "Erwin Penland"
+ - "http://www.erwinpenland.com/"
 liveUrl: https://sem-pro.com
 technologies:
   - HTML
   - SCSS
   - Javascript / jQuery
+  - AJAX
   - Twig Templating
   - Slim Framework
 screenshots: true
+logo: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam numquam perferendis commodi laboriosam nostrum voluptatibus dolorum odit sequi similique, ad iure fuga harum magni, id beatae mollitia placeat enim exercitationem.

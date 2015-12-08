@@ -2,6 +2,18 @@
 	&__credit {
 		margin-right: 0.5em;
 	}
+
+	&__logo {
+		display: block;
+		margin: 1.25em auto;
+		height: 5em;
+
+		svg {
+			display: block;
+			margin: 0 auto;
+			height: 100%;
+		}
+	}
 }
 
 .meta {
