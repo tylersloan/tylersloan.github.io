@@ -31,9 +31,22 @@ body {
 
 .article {
 	&--home {
-		border-top: .0625em solid $black;
-		padding-top: 2.5em;
-		padding-bottom: 2.5em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+
+		&:first-child,
+		&:only-child {
+			border-top: 0.5em solid $black;
+		}
+
+		&:last-child:not(:only-child) {
+			border-top: .0625em solid $black;
+		}
+
+		@media screen and (min-width: 768px) {
+			padding-top: 2.5em;
+			padding-bottom: 2.5em;
+		}
 
 		@media screen and (max-width: 999px) {
 
