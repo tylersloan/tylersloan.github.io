@@ -11,33 +11,36 @@
 
 	&--social {
 		display: -webkit-flex;display: -ms-flexbox;display: flex;
-
-		.header & {
-			bottom: 1em;
-			left: 10%;
-			position: absolute;
-			width: 80%;
-		}
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 800px;
 
 		&__item {
 			display: block;
-			height: 3vw;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			margin: 0 auto;
-
+			width: percentage(1/3);
+			padding: 0.5em 1em;
 			transition: .2s all ease;
+
+			&:first-child {
+				align-item: flex-start;
+			}
+
+			@media screen and (min-width: 500px) {
+				width: percentage(1/7);
+				margin: auto;
+				padding: 0.5em;
+			}
 
 			&__icon {
 				display: block;
-				height: 100%;
+				// height: 100%;
+				max-height: 40px;
 
 				* { fill: $black; }
 			}
 
 			&__link {
-				// display: block;
-				// line-height: 0;
+				display: block;
 				margin: 0 auto;
 
 				&:hover,
@@ -45,41 +48,6 @@
 					* {
 						fill: $color;
 					}
-					// &.dribbble {
-					// 	* {
-					// 		fill: $dribbble;
-					// 	}
-					// }
-					// &.email {
-					// 	* {
-					// 		fill: $email;
-					// 	}
-					// }
-					// &.facebook {
-					// 	* {
-					// 		fill: $facebook;
-					// 	}
-					// }
-					// &.github {
-					// 	* {
-					// 		fill: $github;
-					// 	}
-					// }
-					// &.instagram {
-					// 	* {
-					// 		fill: $instagram;
-					// 	}
-					// }
-					// &.twitter {
-					// 	* {
-					// 		fill: $twitter;
-					// 	}
-					// }
-					// &.stack-overflow {
-					// 	* {
-					// 		fill: $stack-overflow;
-					// 	}
-					// }
 				}
 			}
 		}
