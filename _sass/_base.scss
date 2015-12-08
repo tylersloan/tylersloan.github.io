@@ -6,6 +6,7 @@ html, body, .header { min-height: 100vh; }
 
 body {
 	// color: rgba($black, 0);
+	border-bottom: 1em solid $black;
 	color: $black;
 	display: -webkit-flex;display: -ms-flexbox;display: flex;
 	font: {
@@ -27,8 +28,14 @@ body {
 .article {
 	&--home {
 		border-top: .5em solid $black;
+		// border-bottom: .5em solid $black;
 		padding-top: 2.5em;
-		
+		padding-bottom: 2.5em;
+
+		&:only-child {
+			width: 50% !important;
+		}
+
 		&:first-of-type {
 			margin-right: 1em;
 			width: 30%;
@@ -44,7 +51,7 @@ body {
 
 .main {
 	// margin-left: 1em;
-	padding-bottom: 2.5em;
+
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
