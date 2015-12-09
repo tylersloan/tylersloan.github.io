@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/style.css" />
   </head>
 
-  <body class="layout--{{ page.bodyClass }}">
+  <body class="layout--{{ page.bodyClass }} {{ page.title | slugify }}">
     <header class="header">
       <span class="header__section">
         <h1 class="site-name">
@@ -53,7 +53,7 @@
               {% assign projects = site.projects | sort: 'orderId' %}
               {% for project in projects %}
                 <li>
-                  <a href="{{ project.url }}">{{ project.title }}</a>
+                  <a data-project="{{ project.title | slugify }}" href="{{ project.url }}">{{ project.title }}</a>
                 </li>
               {% endfor %}
             </ul>
@@ -63,7 +63,7 @@
               {% assign projects = site.open-source-projects | sort: 'orderId' %}
               {% for project in projects %}
                 <li>
-                  <a href="{{ project.url }}">{{ project.title }}</a>
+                  <a data-project="{{ project.title | slugify }}" href="{{ project.url }}">{{ project.title }}</a>
                 </li>
               {% endfor %}
             </ul>

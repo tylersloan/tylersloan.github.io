@@ -16,6 +16,17 @@ body {
   	position: relative;
 }
 
+$projects: denny-s erwin-penland southeastern-mills carolina-oaks cit-bank hunger-crunch cookbook-app is-that-hashtag-taken;
+
+@each $project in $projects {
+	.#{$project} {
+		[data-project="#{$project}"] {
+			background: $color;
+			color: $white;
+		}
+	}
+}
+
 .half {
 	@media screen and (max-width: 499px)  {
 		.column {
