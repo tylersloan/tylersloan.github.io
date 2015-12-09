@@ -1,8 +1,10 @@
 $entry: 'entry';
 
 .#{$entry} {
+	font-size: 1.25em;
+
 	@media screen and (min-width: 500px) {
-		// width: 50%;
+		font-size: 1.5em;
 	}
 
 	img {
