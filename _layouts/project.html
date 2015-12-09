@@ -71,11 +71,15 @@ bodyClass: layout-project
       </section>
       {% endif %}
 
-      <section class="">
+      <section class="section">
         {{ content }}
       </section>
+      <footer class="section">
+        <a class="button" href="{{ page.liveUrl }}" target="_blank">View Live Site</a>
+        &nbsp;
+        &nbsp;
+        <a class="link" href="/projects">See all projects</a>
+      </footer>
     </section>
   </main>
-
-  <footer></footer>
 </article>

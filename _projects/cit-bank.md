@@ -2,6 +2,8 @@
 layout: project
 bodyClass: project
 title: "CIT Bank"
+client: "CIT Bank"
+liveUrl: "https://www.bankoncit.com/"
 headline: "An award-winning online bank full of fun, color, and financial expertise."
 orderId: 004
 builtIn: "Summer 2014"
