@@ -24,3 +24,13 @@ Designing and building yourself a portfolio is known to be one of the hardest th
 <br/>
 
 Finding the right amount of content mixed with a elegant amount of "ohhs" and "ahhs" was challenging. This project was full of personal, techincal, and group victories that resulted in a delightful website and a collective sigh of relief.
+
+<br />
+
+## While working on this, I learned about:
+* • Scrolling performance
+* • CSS Triggers (layout/paint/composite)
+* • Limitations of css clipping
+* • Firefox is annoying (I don't really believe this)
+* • CSS blend modes
+* • When to stop

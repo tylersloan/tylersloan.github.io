@@ -43,10 +43,8 @@ p {
 a {
 	text-decoration: none;
 	color: $color;
-	// color: rgba($color, 0);
+}
 
-	// transition: .25s color ease;
-
-	// .wf-loading & { color: rgba($color, 0); }
-	// .wf-active & { color: $color; }
+small {
+  font-size: 50%;
 }
