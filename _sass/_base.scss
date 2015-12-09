@@ -61,6 +61,7 @@ $projects: denny-s erwin-penland southeastern-mills carolina-oaks cit-bank hunge
 	&--home {
 		padding-top: 1em;
 		padding-bottom: 1em;
+		position: relative;
 
 		&:first-child,
 		&:only-child {
@@ -163,16 +164,13 @@ $projects: denny-s erwin-penland southeastern-mills carolina-oaks cit-bank hunge
 }
 
 .main {
-	@media screen and (max-width: 1000px) {
-		width: 100%;
-	}
+	width: calc(100% - 5.4375em);
 
 	@media screen and (min-width: 1000px) {
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
 		flex-wrap: wrap;
-		// width: calc(100vw - ( (55em/16) + 2em ));
 	}
 }
 

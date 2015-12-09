@@ -5,7 +5,7 @@ title: "Erwin Penland"
 orderId: 002
 builtIn: "Spring 2015"
 client: "Erwin Penland"
-headline: "Bragging on yourself is hard, but a shiny new website sure helps get the point across."
+headline: "Bragging on yourself is hard–a shiny, new website helps make the point."
 agency:
  - "Erwin Penland"
  - "http://www.erwinpenland.com/"

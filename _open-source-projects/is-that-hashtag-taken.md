@@ -2,7 +2,7 @@
 layout: project
 bodyClass: project
 title: "Is That Hashtag Taken?"
-headline: "Hashtags are dumb–make sure yours isn't taken already"
+headline: "Hashtags are dumb–make sure yours isn't taken already."
 orderId: 002
 githubUrl: https://github.com/tylersloan/is-that-hashtag-taken
 technologies:
@@ -11,8 +11,6 @@ technologies:
   - Ruby
   - Sinatra
 ---
-
-<br/>
 
 This is sort of silly, but it was an excercise in APIs and Ruby/Sinatra.
 

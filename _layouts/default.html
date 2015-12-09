@@ -29,19 +29,20 @@
     <main id="main" role="main" class="main">
 
       <article class="article--home">
-        <section class="section about-section">
+        <section class="section about-section nav-section">
           <header>
             <h2 class="section__title">
               <a data-title="About Me" href="/about">About Me</a>
             </h2>
           </header>
-          <p>Some information about you!</p>
-          <p>A place to include any other types of information that you'd like to include about yourself.</p>
+
+          <h3>Hey, I'm Tyler! Thanks for stopping by.</h3>
+          <p>Take a look around at a few projects I've worked on and even fewer blog posts. More where both of those came from soon.</p>
 
           <a class="button" href="/about">Read more</a>
         </section>
 
-        <section class="section projects-section">
+        <section class="section projects-section nav-section">
           <header>
             <h2 class="section__title">
               <a data-title="Projects" href="/projects">Projects</a>
@@ -73,7 +74,7 @@
           <a class="button" href="/projects">See all projects</a>
         </section>
 
-        <section class="section blog-section">
+        <section class="section blog-section nav-section">
           <header>
             <h2 class="section__title">
               <a data-title="Blog" href="/blog">Blog</a>
@@ -91,13 +92,19 @@
 
           <a class="button" href="/blog">See all posts</a>
         </section>
+
+        <footer class="footer--main">
+        <p>
+          <small>I last pushed code to this site in {{ site.time | date: '%Y' }}. <span style="color: #0BBD88">Green</span> is 022488 in hybrid-hex format.</small>
+        </p>
+        <p>
+          <small>You can <a href="https://github.com/tylersloan/tylersloan.github.io">push code to it</a> too, if you want. Or, you can <a href="mailto:tyler.g.sloan@gmail.com">email me and hire me</a>.</small>
+        </p>
+        </footer>
       </article>
 
       {{ content }}
     </main>
-
-    <footer>
-    </footer>
 
     {% include analytics.html %}
   </body>
