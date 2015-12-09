@@ -1,10 +1,10 @@
 ---
 layout: project
 bodyClass: project
-title: Hunger Crunch
+title: "Hunger Crunch"
 orderId: 005
 builtIn: "Spring 2014"
-client: "Hunger Crunch"
+client: "Rice Bowls"
 headline: "Play video games or help feed orphans? Play Hunger Crunch and do both!"
 agency:
  - "Rice Bowls"

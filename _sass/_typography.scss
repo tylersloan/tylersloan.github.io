@@ -43,6 +43,24 @@ p {
 a {
 	text-decoration: none;
 	color: $color;
+
+  .on-github & {
+    position: relative;
+
+    &:before {
+      $unit: 22px;
+      background: url(../images/logos/github.svg) no-repeat;
+      background-size: auto 100%;
+      content: '';
+      display: block;
+      height: $unit;
+      position: absolute;
+      top: 50%;
+      left: calc( 100% + (11px) );
+      transform: translateY(-50%);
+      width: $unit;
+    }
+  }
 }
 
 small {
