@@ -19,14 +19,14 @@ technologies:
   - Wufoo
   - Google Maps
 screenshots: true
-logo: true
+logo: png
 ---
 
-No, you still can't go to the dentist online, but you sure can set up an appointment there.
+No, you still can't go to the dentist online, but at least it's easy to set up an appointment now.
 
 <br/>
 
-I was able to work with the amazing design studio, Shed Labs, to deliver a really beautiful, digestable brochure website for Carolina Oaks dentistry.
+I was able to work with the amazing design studio, Shed Labs, to deliver a really beautiful, digestable brochure website for Carolina Oaks dentistry. The site doesn't do anything you shouldn't epect and delivers everything it should–dentists, locations, hours, and contact information, including a form that can be sued to initiate an appointment.
 
 <br/>
 

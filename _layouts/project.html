@@ -63,7 +63,11 @@ bodyClass: layout-project
     <section class="section project__content">
       {% if page.logo %}
       <section class=" project__logo">
+        {% if page.logo != 'png' %}
         {% include logos/{{page.title | slugify}}.svg %}
+        {% elsif page.logo == 'png' %}
+        <img src="/images/logos/{{page.title | slugify}}.png" alt="">
+        {% endif %}
       </section>
       {% endif %}
 
