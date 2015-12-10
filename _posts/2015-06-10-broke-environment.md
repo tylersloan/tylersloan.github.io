@@ -1,5 +1,6 @@
 ---
 layout: post
+bodyClass: blog
 title: Dev Environment
 categories: fail environment milestone
 ---

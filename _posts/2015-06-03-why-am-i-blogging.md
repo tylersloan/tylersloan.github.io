@@ -1,5 +1,6 @@
 ---
 layout: post
+bodyClass: blog
 title: Why am I blogging?
 categories: salutation app feelings
 ---

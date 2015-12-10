@@ -1,5 +1,6 @@
 ---
 layout: post
+bodyClass: blog
 title: The Non-Design
 categories: design screenies progress
 ---
