@@ -14,11 +14,11 @@ technologies:
   - Google Maps
 ---
 
-The project currently known as The Cookbook App started years ago when I was but a student at The Iron Yard. The task was to create an app with Backbone.js. I made an OK amount of progress for having only been writing Javascript for a couple months, but once the class was over and I was picking up real work, I dropped this app as a side project and focussed on getting paid. (I really wanted to quit working at the restaurant!) Anyway, I moved it off my plate but I could never really move it out of my mind. The unfinished app sort of haunted me.
+The project currently known as The Cookbook App started years ago when I was but a student at The Iron Yard. The task was to create a Backbone.js app. I made an okay amount of progress for having only been writing Javascript for a couple months, but once the class was over and I began working on real projects, I dropped this app as a side project and focussed on getting paid and getting better just building websites. (I really wanted to quit running food every night!) Anyway, I moved it off my plate but I could never really move it out of my mind. The unfinished app sort of haunted me.
 
 <br />
 
-I think it haunted me for two reasons. One, Backbone was hard for me to learn. I feel like once I had an excuse to put the hard project down I took it. Two, I really liked working on it, and a few people were actually looking forward to suing it. I feel like a bit of a failure because of both of said reasons and I can't let that be anymore.
+I think it haunted me for two reasons. One, Backbone was hard for me to learn. I feel like once I had an excuse to put the hard project down, I took it. Two, I really liked working on it and a few people were actually looking forward to using it. I feel like a bit of a failure because of said reasons and I can't live like that.
 
 <br />
 
