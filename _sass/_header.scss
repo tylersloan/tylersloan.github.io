@@ -1,0 +1,36 @@
+.header {
+	border-right: 1px solid $black;
+	border-top: .5em solid $black;
+	width: calc((55em/16) + 2em); // 5.4375em
+	opacity: .4;
+	padding: 1em;
+	text-align: center;
+	margin-right: 1em;
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+
+	&__section {
+		display: inline-block;
+		padding: 1.5em 0;
+		text-align: left;
+		-webkit-transform: rotate(180deg);
+		    -ms-transform: rotate(180deg);
+		        transform: rotate(180deg);
+		-webkit-writing-mode: vertical-rl;
+				writing-mode: vertical-rl;
+
+		span {
+			&:first-of-type {
+				display: block;
+				font: {
+					size: 70%;
+					weight: 300;
+				}
+				text-transform: uppercase;
+			}
+		}
+	}
+}

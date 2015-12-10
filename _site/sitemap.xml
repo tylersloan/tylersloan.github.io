@@ -1,3 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://tylersloan.github.io//the-non-design/</loc>
+    <lastmod>2015-06-10T00:00:00-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://tylersloan.github.io//broke-environment/</loc>
+    <lastmod>2015-06-10T00:00:00-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://tylersloan.github.io//why-am-i-blogging/</loc>
+    <lastmod>2015-06-03T00:00:00-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://tylersloan.github.io//404/</loc>
+  </url>
+  <url>
+    <loc>http://tylersloan.github.io//about/</loc>
+  </url>
+  <url>
+    <loc>http://tylersloan.github.io//blog/</loc>
+  </url>
+  <url>
+    <loc>http://tylersloan.github.io//</loc>
+  </url>
+  <url>
+    <loc>http://tylersloan.github.io//projects/</loc>
+  </url>
 </urlset>

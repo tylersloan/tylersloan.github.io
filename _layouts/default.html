@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+    {% include favicons.html %}
+
+    <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+  </head>
+
+  <body class="layout--{{ page.bodyClass }} {{ page.title | slugify }}">
+    {% include header.html %}
+
+    <main id="main" role="main" class="main">
+      {% include article-nav.html %}
+      {{ content }}
+    </main>
+
+    {% include analytics.html %}
+  </body>
+</html>

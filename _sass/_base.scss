@@ -1,0 +1,231 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body, .header { min-height: 100vh; }
+
+body {
+	color: $black;
+	display: -webkit-flex;display: -ms-flexbox;display: flex;
+	font: {
+		family: $source-sans-pro;
+		size: 16px;
+		weight: $fw-normal;
+	}
+	line-height: 1.4;
+  	position: relative;
+}
+
+$projects: denny-s erwin-penland southeastern-mills carolina-oaks cit-bank hunger-crunch cookbook-app is-that-hashtag-taken;
+
+@each $project in $projects {
+	.#{$project} {
+		[data-project="#{$project}"] {
+			background: $color;
+			color: $white;
+		}
+	}
+}
+
+.half {
+	@media screen and (max-width: 499px)  {
+		.column {
+			~ .column {
+				margin-top: 1em;
+			}
+		}
+	}
+
+	@media screen and (min-width: 500px) {
+		display: -webkit-flex;display: -ms-flexbox;display: flex;
+
+		.column {
+			width: 50%;
+		}
+	}
+}
+
+.post {
+	~ .post {
+		padding-top: 1em;
+		padding-bottom: 1em;
+
+		@media screen and (min-width: 768px) {
+			padding-top: 2.5em;
+			padding-bottom: 2.5em;
+		}
+	}
+}
+
+.article {
+	&--home {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		position: relative;
+
+		&:first-child,
+		&:only-child {
+			border-top: 0.5em solid $black;
+		}
+
+		&:last-child:not(:only-child) {
+			border-top: .0625em solid $black;
+
+			@media screen and (min-width: 768px) {
+				border-top: 0.5em solid $black;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			padding-top: 2.5em;
+			padding-bottom: 2.5em;
+		}
+
+		@media screen and (max-width: 999px) {
+
+			&:only-child {
+				width: 100% !important;
+
+				.section {
+					padding-bottom: 1em;
+
+					~ .section {
+						border-top: 1px solid $black;
+						padding-top: 1em;
+					}
+
+					&__title {
+						a {
+							color: $black;
+							pointer-events: none;
+						}
+					}
+				}
+			}
+
+			&:first-of-type:not(:only-child) {
+				display: -webkit-flex;display: -ms-flexbox;display: flex;
+				padding-bottom: 0.625em;
+				padding-top: 0.625em;
+				width: 100%;
+
+				@media screen and (min-width: 768px) {
+					-webkit-justify-content: space-between;-ms-flex-pack: justify;justify-content: space-between;
+				}
+
+				.section__title {
+					line-height: 1.3;
+					margin-bottom: 0;
+				}
+
+				* :not(:first-child) {
+					display: none;
+				}
+
+				.section {
+					@media screen and (max-width: 767px) {
+						margin-right: 1em;
+					}
+				}
+			}
+
+			&:last-of-type {
+				padding-right: 5vw;
+				width: 100%;
+			}
+		}
+
+		@media screen and (min-width: 1000px) {
+			&:first-child {
+				.section__title {
+					a {
+						color: $black;
+						pointer-events: none;
+					}
+				}
+			}
+
+			&:only-child {
+				width: 50% !important;
+			}
+
+			&:first-of-type {
+				margin-right: 1em;
+				width: calc(30% - 1em);
+			}
+
+			&:last-of-type {
+				margin-left: 1em;
+				padding-right: 5vw;
+				width: calc(70% - 1em);
+			}
+		}
+	}
+}
+
+.main {
+	width: calc(100% - 5.4375em);
+
+	@media screen and (min-width: 1000px) {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.layout {
+	&--project {
+		.projects-section {
+			.section__title {
+				a {
+					background: $black;
+					color: $white;
+
+					&:hover,
+					&:focus {
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&--blog {
+		.blog-section {
+			.section__title {
+				a {
+					background: $black;
+					color: $white;
+
+					&:hover,
+					&:focus {
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&--about {
+		.about-section {
+			.section__title {
+				a {
+					background: $black;
+					color: $white;
+
+					&:hover,
+					&:focus {
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

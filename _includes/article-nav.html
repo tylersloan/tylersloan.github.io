@@ -1,0 +1,64 @@
+<article class="article--home">
+  <section class="section about-section nav-section">
+    <header>
+      <h2 class="section__title">
+        <a data-title="About Me" href="/about">About Me</a>
+      </h2>
+    </header>
+
+    <h3>Hey, my name's Tyler! I'm a front-end programmer with design chops and availability–what's not to like?</h3>
+
+    <a class="button" href="/about">Read more</a>
+  </section>
+
+  <section class="section projects-section nav-section">
+    <header>
+      <h2 class="section__title">
+        <a data-title="Projects" href="/projects">Projects</a>
+      </h2>
+    </header>
+
+    <section class="section half">
+      <ul class="column">
+        <li>Commercial Projects:</li>
+        {% assign projects = site.projects | sort: 'orderId' %}
+        {% for project in projects %}
+          <li>
+            <a data-project="{{ project.title | slugify }}" href="{{ project.url }}">{{ project.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <ul class="column">
+        <li>Open-Source Projects:</li>
+        {% assign projects = site.open-source-projects | sort: 'orderId' %}
+        {% for project in projects %}
+          <li>
+            <a data-project="{{ project.title | slugify }}" href="{{ project.url }}">{{ project.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <a class="button" href="/projects">See all projects</a>
+  </section>
+
+  <section class="section blog-section nav-section">
+    <header>
+      <h2 class="section__title">
+        <a data-title="Blog" href="/blog">Blog</a>
+      </h2>
+    </header>
+
+    {% for post in site.posts limit:1 %}
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <div class="post-excerpt">
+        {{ post.excerpt | remove: '<p>' | remove: '</p>' }} ///
+        <a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
+      </div>
+
+    {% endfor %}
+
+    <a class="button" href="/blog">See all posts</a>
+  </section>
+</article>

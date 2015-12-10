@@ -1,0 +1,30 @@
+---
+layout: default
+bodyClass: project
+---
+
+<article class="projects article--home">
+  {% assign projects = site.projects | sort: 'orderId' %}
+  {% for project in projects %}
+    <section class="section {{ project.title|slugify }}">
+      <h2 class="section__title">
+        <a data-title="{{ project.title }}" href="{{ project.url }}">
+          {{ project.title }}
+        </a>
+      </h2>
+      <p>{{ project.builtIn }}</p>
+    </section>
+  {% endfor %}
+
+  {% assign projects = site.open-source-projects | sort: 'orderId' %}
+  {% for project in projects %}
+    <section class="section on-github {{ project.title|slugify }}">
+      <h2 class="section__title">
+        <a data-title="{{ project.title }}" href="{{ project.url }}">
+          {{ project.title }}
+        </a>
+      </h2>
+      <p>{{ project.builtIn }}</p>
+    </section>
+  {% endfor %}
+</article>

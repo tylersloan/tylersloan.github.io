@@ -1,0 +1,32 @@
+
+//
+// VARIABLES
+//
+
+// Colors
+$black: #111111;
+$white: #ffffff;
+$color: #0BBD88;
+
+$twitter: #00aced;
+$facebook: #3b5998;
+$instagram: #517fa4;
+$dribbble: #ea4c89;
+$email: $color;
+$github: #000;
+$stack-overflow: #f69c55;
+
+// Font stacks
+$fallbacks: "Arial Narrow", "Helvetica Neue", Helvetica;
+$adelle: "adelle-sans", $fallbacks;
+$source-sans-pro: "Source Sans Pro";
+
+$fw-normal: 300;
+$fw-heavy: 900;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}

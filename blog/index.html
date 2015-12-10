@@ -1,0 +1,20 @@
+---
+layout: default
+bodyClass: blog
+---
+
+<article class="article--home">
+	{% for post in site.posts %}
+		<section class="section post">
+			<h2 class="section__title">
+				<a data-title="{{ post.title }}" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+			</h2>
+
+			<div class="entry">
+			  {{ post.excerpt }}
+			</div>
+
+			<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+		</section>
+	{% endfor %}
+</article>

@@ -1,0 +1,115 @@
+$section: 'section';
+
+.#{$section} {
+	~ .#{$section} {
+		&:not(.nav-section) {
+			padding-top: 1em;
+		}
+
+		.projects & {
+			padding-top: 1em;
+
+			@media screen and (max-width: 767px) {
+				padding-bottom: 1em;
+			}
+
+			@media screen and (min-width: 768px) {
+				border-top: 1px solid $black;
+				padding-bottom: 2.5em;
+				padding-top: 2.5em;
+			}
+
+			@media screen and (min-width: 1000px) {
+				margin-top: 0;
+			}
+		}
+
+		@media screen and (min-width: 1000px) {
+			padding-top: 2.5em;
+		}
+	}
+
+	.projects & {
+		position: relative;
+		padding-bottom: 1em;
+
+		@media screen and (max-width: 767px) {
+
+		}
+
+		@media screen and (min-width: 768px) {
+			padding-bottom: 2.5em;
+		}
+
+		.#{$section}__title {
+			margin-bottom: 0;
+		}
+	}
+
+	&__title {
+		font-size: 1.15em;
+		line-height: 0.9;
+		margin-bottom: 0.25em;
+
+		&--secondary {
+			font-size: 1.15em;
+			line-height: 1.25;
+			margin-bottom: 0.25em;
+
+			@media screen and (min-width: 500px) {
+				font-size: 1.5em;
+			}
+		}
+
+		a {
+			display: inline-block;
+			position: relative;
+
+			@media screen and (min-width: 450px) {
+				transition: color .25s ease .15s;
+
+				&:after {
+					bottom: 0;
+					color: black;
+					content: attr(data-title);
+					display: block;
+					height: 0;
+					opacity: 0;
+					left: 0;
+					overflow: hidden;
+					position: absolute;
+					transition: opacity .25s ease, height .25s ease .25s;
+					z-index: 3;
+				}
+
+				&:hover,
+				&:focus {
+					color: black;
+
+					&:after {
+						bottom: auto;
+						height: 100%;
+						top: 0;
+						opacity: 1;
+						transition: opacity .25s ease, height .25s ease;
+					}
+				}
+			}
+		}
+
+		@media screen and (min-width: 450px) {
+			font-size: 1.5em;
+		}
+
+		@media screen and (min-width: 768px) {
+			display: inline-block;
+			font-size: 3.5em;
+			vertical-align: baseline;
+
+			+ p {
+				font-size: 0.825rem;
+				font-weight: $fw-normal;
+			}
+		}
+	}
+}

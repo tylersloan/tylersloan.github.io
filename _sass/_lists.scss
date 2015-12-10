@@ -1,0 +1,57 @@
+.list {
+	&--normal {
+		&__item {
+			list-style-image: url(/images/graphics/plus.svg);
+			margin: 0 0 0.25em 1em;
+		}
+	}
+
+	&--inline {
+		&__item {
+			display: inline-block;
+
+			.meta & {
+				margin-right: 0.5em;
+			}
+		}
+	}
+
+	&--social {
+		display: -webkit-flex;display: -ms-flexbox;display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 800px;
+
+		&__item {
+			display: block;
+			width: percentage(1/3);
+			padding: 0.5em 1em;
+			transition: .2s all ease;
+
+			@media screen and (min-width: 500px) {
+				width: percentage(1/7);
+				margin: auto;
+				padding: 0.5em;
+			}
+
+			&__icon {
+				display: block;
+				max-height: 40px;
+
+				* { fill: $black; }
+			}
+
+			&__link {
+				display: block;
+				margin: 0 auto;
+
+				&:hover,
+				&:focus {
+					* {
+						fill: $color;
+					}
+				}
+			}
+		}
+	}
+}

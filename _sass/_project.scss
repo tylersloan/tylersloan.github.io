@@ -1,0 +1,99 @@
+.project {
+	&__credit {
+		margin-right: 0.5em;
+	}
+
+	&__logo {
+		display: block;
+		margin: 1.25em auto;
+		max-width: 300px;
+		width: 100%;
+
+		svg,
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+
+	&__content {
+		font-size: 1.25em;
+
+		img {
+			max-width: 100%;
+		}
+
+		@media screen and (min-width: 500px) {
+			font-size: 1.5em;
+		}
+	}
+}
+
+.meta {
+	font-size: 0.825em;
+}
+
+.screenshots {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.screenshot {
+	border: {
+		color: $white;
+		width: 0.5em;
+		style: solid;
+	}
+	border-radius: 2px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.19),
+				0 3px 3px rgba(0,0,0,0.23),
+				0 0 1px rgba($black, 1),
+				inset 0 0 1px $black;
+	min-height: 12.5em;
+	height: 20em;
+	overflow: scroll;
+
+	span {
+		border-radius: 1px;
+		display: block;
+		position: relative;
+		z-index: -1;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+	}
+
+	@media screen and (min-width: 500px) {
+		border-width: 1em;
+		border-radius: 5px;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19),
+					0 6px 6px rgba(0,0,0,0.23),
+					0 0 1px rgba($black, 1),
+					inset 0 0 1px $black;
+
+		&--desktop {
+			margin-right: 0.5em;
+			width: calc(70% - 0.5em);
+		}
+
+		&--mobile {
+			margin-left: 0.5em;
+			width: calc(30% - 0.5em);
+		}
+	}
+
+	@media screen and (max-width: 499px) {
+		&--desktop {
+			margin-bottom: 1em;
+		}
+	}
+
+	@media screen and (min-width: 769px) {
+		height: 50vh;
+	}
+}
