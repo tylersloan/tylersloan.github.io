@@ -14,7 +14,7 @@ permalink: /about/
 		<img src="/images/photo/my-family.jpg" alt="Photo: Me with my family during the Summer.">
 		<figcaption class="hidden-text">The Sloans, and we have another one the way!</figcaption>
 	</figure>
-	<p>That's a photo of me and my family at a seafood resturant last summer. I've cut my hair once since then and have a beard now too, but  basically that's what I look like. I love in Greenville, South Carolina and it is really lovely. I work as a "UX Developer" at a full-service agency called <a href="http://erwinpenland.com" target="_blank">Erwin Penland</a>. I've been there over a year now.</p>
+	<p>That's a photo of me and my family at a seafood restaurant last summer. I've cut my hair once since then and have a beard now too, but  basically that's what I look like. I live in Greenville, South Carolina and it is really lovely. I work as a "UX Developer" at a full-service agency called <a href="http://erwinpenland.com" target="_blank">Erwin Penland</a>. I've been there over a year now.</p>
 </div>
 
 <div class="section callout">
