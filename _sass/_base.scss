@@ -157,9 +157,13 @@ $projects: denny-s erwin-penland southeastern-mills carolina-oaks cit-bank hunge
 			}
 
 			&:last-of-type {
-				margin-left: 1em;
+
 				padding-right: 5vw;
 				width: calc(70% - 1em);
+			}
+
+			&:last-of-type:not(:only-child) {
+				margin-left: 1em;
 			}
 		}
 	}
