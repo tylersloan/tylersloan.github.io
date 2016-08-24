@@ -16,7 +16,7 @@ body {
   	position: relative;
 }
 
-$projects: denny-s erwin-penland southeastern-mills carolina-oaks cit-bank hunger-crunch cookbook-app is-that-hashtag-taken;
+$projects: denny-s erwin-penland euphoria-greenville southeastern-mills carolina-oaks cit-bank hunger-crunch cookbook-app is-that-hashtag-taken;
 
 @each $project in $projects {
 	.#{$project} {

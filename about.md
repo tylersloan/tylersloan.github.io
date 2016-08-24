@@ -14,7 +14,7 @@ permalink: /about/
 		<img src="/images/photo/my-family.jpg" alt="Photo: Me with my family during the Summer.">
 		<figcaption class="hidden-text">The Sloans, and we have another one the way!</figcaption>
 	</figure>
-	<p>That's a photo of me and my family at a seafood restaurant last summer. I've cut my hair once since then and have a beard now too, but  basically that's what I look like. I live in Greenville, South Carolina and it is really lovely. I work as a "UX Developer" at a full-service agency called <a href="http://erwinpenland.com" target="_blank">Erwin Penland</a>. I've been there over a year now.</p>
+	<p>That's a photo of me and my family at a seafood restaurant last summer. I live in Greenville, South Carolina and it is really lovely. I'm a software engineer at <a href="http://boomtownroi.com/" target="_blank">BoomTown</a>. I work with a really amazing team.</p>
 </div>
 
 <div class="section callout">
@@ -56,24 +56,14 @@ permalink: /about/
 <div class="section">
 	<h3>Some technologies I Know:</h3>
 	<ul class="list--normal">
-		<li class="list--normal__item">HTML (pretty good at ruby flavored html like .erb, also getting used to liquid template)</li>
-		<li class="list--normal__item">CSS (Sass via Scss, css3 and 4 in the future)</li>
-		<li class="list--normal__item">Interaction Javscript (jquery)</li>
-		<li class="list--normal__item">Backend Awareness of Ruby, PHP, Node</li>
+		<li class="list--normal__item">HTML</li>
+		<li class="list--normal__item">CSS (Scss, CSS Modules)</li>
+		<li class="list--normal__item">Javscript</li>
+		<li class="list--normal__item">Backend Awareness of Ruby, PHP, Node, .NET</li>
 		<li class="list--normal__item">Dev Ops</li>
-		<li class="list--normal__item">Web Performance Enhancements</li>
-		<li class="list--normal__item">Javascript Frameworks Awareness of Backbone, Angular, React, Ember</li>
+		<li class="list--normal__item">Web Performance</li>
 		<li class="list--normal__item">Accessibility</li>
 		<li class="list--normal__item">Static Site Generators</li>
-		<li class="list--normal__item">Gulp, Grunt, Codekit</li>
-	</ul>
-</div>
-
-<div class="section">
-	<h3>Some goals I have</h3>
-	<ul class="list--normal">
-		<li class="list--normal__item">Try new-to-me feature once a week in Codepen. Doesn't need to be something I need to know at the moment. Just something to learn.</li>
-		<li class="list--normal__item">Write once a month on tech. Could be related to above.</li>
-		<li class="list--normal__item">Launch Cookbook as real product with site, even if you don't market it.</li>
+		<li class="list--normal__item">Webpack, Gulp, Grunt, Codekit</li>
 	</ul>
 </div>

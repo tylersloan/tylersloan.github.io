@@ -1,73 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://tylersloan.github.io//blog/new-site-for-2016/</loc>
-    <lastmod>2015-12-14T00:00:00-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://tylersloan.github.io//blog/the-non-design/</loc>
-    <lastmod>2015-06-10T00:00:00-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://tylersloan.github.io//blog/broke-environment/</loc>
-    <lastmod>2015-06-10T00:00:00-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://tylersloan.github.io//blog/why-am-i-blogging/</loc>
-    <lastmod>2015-06-03T00:00:00-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://tylersloan.github.io//404/</loc>
-  </url>
-  <url>
-    <loc>http://tylersloan.github.io//about/</loc>
-  </url>
-  <url>
-    <loc>http://tylersloan.github.io//blog/</loc>
-  </url>
-  <url>
-    <loc>http://tylersloan.github.io//</loc>
-  </url>
-  <url>
-    <loc>http://tylersloan.github.io//projects/</loc>
-  </url>
-  <url>
-    <loc>http://tylersloan.github.io//purpose/</loc>
-  </url>
-    <url>
-      <loc>http://tylersloan.github.io//projects/carolina-oaks/</loc>
-    </url>
-    <url>
-      <loc>http://tylersloan.github.io//projects/cit-bank/</loc>
-    </url>
-    <url>
-      <loc>http://tylersloan.github.io//projects/dennys/</loc>
-    </url>
-    <url>
-      <loc>http://tylersloan.github.io//projects/erwin-penland/</loc>
-    </url>
-    <url>
-      <loc>http://tylersloan.github.io//projects/hunger-crunch/</loc>
-    </url>
-    <url>
-      <loc>http://tylersloan.github.io//projects/southeastern-mills/</loc>
-    </url>
-    <url>
-      <loc>http://tylersloan.github.io//projects/cookbook-app/</loc>
-    </url>
-    <url>
-      <loc>http://tylersloan.github.io//projects/is-that-hashtag-taken/</loc>
-    </url>
-    <url>
-      <loc>http://tylersloan.github.io//blog/why-am-i-blogging/</loc>
-    </url>
-    <url>
-      <loc>http://tylersloan.github.io//blog/broke-environment/</loc>
-    </url>
-    <url>
-      <loc>http://tylersloan.github.io//blog/the-non-design/</loc>
-    </url>
-    <url>
-      <loc>http://tylersloan.github.io//blog/new-site-for-2016/</loc>
-    </url>
+<url>
+<loc>http://tylersloan.github.io//blog/new-site-for-2016/</loc>
+<lastmod>2015-12-14T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://tylersloan.github.io//blog/the-non-design/</loc>
+<lastmod>2015-06-10T00:00:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://tylersloan.github.io//blog/broke-environment/</loc>
+<lastmod>2015-06-10T00:00:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://tylersloan.github.io//blog/why-am-i-blogging/</loc>
+<lastmod>2015-06-03T00:00:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://tylersloan.github.io//404/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//about/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//blog/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//projects/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//purpose/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//projects/cookbook-app/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//projects/is-that-hashtag-taken/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//projects/carolina-oaks/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//projects/cit-bank/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//projects/dennys/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//projects/erwin-penland/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//projects/euphoria/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//projects/hunger-crunch/</loc>
+</url>
+<url>
+<loc>http://tylersloan.github.io//projects/southeastern-mills/</loc>
+</url>
 </urlset>
