@@ -1,20 +1,47 @@
-# My Personal Site
+# templates/spa
 
-## Site Info
-* Built with [Jekyll](http://jekyllrb.com/) utilizing [Jekyll Now](https://github.com/barryclark/jekyll-now) to deploy easily on GitHub Pages
-* The green color is the franken-hex value of my wife's birthday. 
-* Code and copy is open source, so if you see something wrong and want to be a pal, [open an issue](https://github.com/tylersloan/tylersloan.github.io/issues/new) and/or submit a PR.
+This template leverages [Remix SPA Mode](https://remix.run/docs/en/main/future/spa-mode) and the [Remix Vite Plugin](https://remix.run/docs/en/main/future/vite) to build your app as a Single-Page Application using [Client Data](https://remix.run/docs/en/main/guides/client-data) for all of your data loads and mutations.
 
-***
+## Setup
 
-## Local Development
+```shellscript
+npx create-remix@latest --template remix-run/remix/templates/spa
+```
 
-1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
-2. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
-3. Serve the site and watch for markup/sass changes `jekyll serve`
-4. View your website at http://0.0.0.0:4000
-5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
+## Development
 
-## Contributing
+You can develop your SPA app just like you would a normal Remix app, via:
 
-Like I said earlier, if something on the site is just wrong, factually, gramatically, or otherwise, feel free to let me know. I'm also open to design pull-requests. I'm an OK designer–my feelings won't be hurt if something ought to change. This site isn't an open-source project that'll get you any sort of points, but I'd appreciate it and it'll get you another green square on your activity chart. Thanks!
+```shellscript
+npm run dev
+```
+
+## Production
+
+When you are ready to build a production version of your app, `npm run build` will generate your assets and an `index.html` for the SPA.
+
+```shellscript
+npm run build
+```
+
+### Preview
+
+You can preview the build locally with [vite preview](https://vitejs.dev/guide/cli#vite-preview) to serve all routes via the single `index.html` file:
+
+```shellscript
+npm run preview
+```
+
+> [!IMPORTANT]
+>
+> `vite preview` is not designed for use as a production server
+
+### Deployment
+
+You can then serve your app from any HTTP server of your choosing. The server should be configured to serve multiple paths from a single root `/index.html` file (commonly called "SPA fallback"). Other steps may be required if the server doesn't directly support this functionality.
+
+For a simple example, you could use [sirv-cli](https://www.npmjs.com/package/sirv-cli):
+
+```shellscript
+npx sirv-cli build/client/ --single
+```
